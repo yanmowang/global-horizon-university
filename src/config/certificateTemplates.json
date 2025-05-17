@@ -1,0 +1,22 @@
+{
+  "default": {
+    "dimensions": {
+      "width": 900,
+      "height": 650
+    },
+    "styles": {
+      "background": "#FFFEF9",
+      "borderColor": "#AA9651",
+      "secondaryBorderColor": "#003087"
+    },
+    "watermark": {
+      "opacity": 0.05,
+      "text": "STRATFORD UNIVERSITY",
+      "rotation": -30
+    },
+    "securityFeatures": {
+      "hashPrefix": "SIU-",
+      "verificationUrl": "verify.stratford-university.edu"
+    }
+  }
+}

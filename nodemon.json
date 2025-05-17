@@ -1,0 +1,15 @@
+{
+  "verbose": true,
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules",
+    "src/client/**",
+    "build/**",
+    "public/**",
+    "*.test.js",
+    "*.spec.js",
+    ".env"
+  ],
+  "watch": ["src/server/"],
+  "ext": "js,json"
+}

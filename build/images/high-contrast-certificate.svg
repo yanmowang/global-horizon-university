@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg">
+  <!-- 纯白背景 确保最大对比度 -->
+  <rect width="1200" height="900" fill="#FFFFFF" />
+  
+  <!-- 装饰性外边框 - 纯黑色以提高对比度 -->
+  <rect x="30" y="30" width="1140" height="840" fill="none" stroke="#000000" stroke-width="8" />
+  <rect x="40" y="40" width="1120" height="820" fill="none" stroke="#000000" stroke-width="4" />
+  
+  <!-- 学校标志 -->
+  <circle cx="600" cy="150" r="80" fill="#FFFFFF" stroke="#000000" stroke-width="5" />
+  <text x="600" y="150" font-family="Arial, sans-serif" font-size="80" font-weight="bold" text-anchor="middle" dominant-baseline="middle" fill="#000000">SIU</text>
+  
+  <!-- 学校名称 -->
+  <text x="600" y="280" font-family="Times New Roman, serif" font-size="45" font-weight="bold" text-anchor="middle" fill="#000000" stroke="#FFFFFF" stroke-width="2">STRATFORD INTERNATIONAL UNIVERSITY</text>
+  
+  <!-- 证书标题 -->
+  <text x="600" y="360" font-family="Times New Roman, serif" font-size="65" font-weight="bold" text-anchor="middle" fill="#000000" stroke="#FFFFFF" stroke-width="2">CERTIFICATE OF COMPLETION</text>
+  <text x="600" y="410" font-family="SimSun, serif" font-size="40" font-weight="bold" text-anchor="middle" fill="#000000">毕业证书</text>
+  
+  <!-- 证书文本 -->
+  <text x="600" y="480" font-family="Times New Roman, serif" font-size="28" text-anchor="middle" fill="#000000">The Stratford International University hereby certifies that</text>
+  
+  <!-- 学生姓名 - 大字体高对比度 -->
+  <rect x="300" y="510" width="600" height="80" fill="#FFFFFF" stroke="#000000" stroke-width="5" rx="5" ry="5" />
+  <text x="600" y="565" font-family="Times New Roman, serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#000000">[RECIPIENT NAME]</text>
+  
+  <!-- 课程描述 -->
+  <text x="600" y="630" font-family="Times New Roman, serif" font-size="28" text-anchor="middle" fill="#000000">has fulfilled the requirements for the degree of</text>
+  
+  <!-- 课程名称 - 大字体高对比度 -->
+  <rect x="250" y="650" width="700" height="80" fill="#FFFFFF" stroke="#000000" stroke-width="5" rx="5" ry="5" />
+  <text x="600" y="705" font-family="Times New Roman, serif" font-size="40" font-weight="bold" text-anchor="middle" fill="#000000">[PROGRAM/DEGREE]</text>
+  
+  <!-- 完成声明 -->
+  <text x="600" y="765" font-family="Times New Roman, serif" font-size="22" text-anchor="middle" fill="#000000">and is awarded this Certificate of Completion with all rights, privileges, and honors appertaining thereto.</text>
+  
+  <!-- 日期部分 -->
+  <text x="300" y="830" font-family="Times New Roman, serif" font-size="22" text-anchor="middle" fill="#000000">Date: [DATE]</text>
+  
+  <!-- 证书ID -->
+  <text x="900" y="830" font-family="Times New Roman, serif" font-size="22" text-anchor="middle" fill="#000000">Certificate ID: [CERTIFICATE-ID]</text>
+  
+  <!-- 签名行 -->
+  <line x1="250" y1="800" x2="450" y2="800" stroke="#000000" stroke-width="3" />
+  <line x1="750" y1="800" x2="950" y2="800" stroke="#000000" stroke-width="3" />
+  
+  <!-- 签名人 -->
+  <text x="350" y="820" font-family="Times New Roman, serif" font-size="18" text-anchor="middle" fill="#000000">Prof. Dr. Linda Foster</text>
+  <text x="350" y="840" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="#000000">University President</text>
+  
+  <text x="850" y="820" font-family="Times New Roman, serif" font-size="18" text-anchor="middle" fill="#000000">Prof. Dr. James Carpenter</text>
+  <text x="850" y="840" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="#000000">Program Director</text>
+  
+  <!-- 验证区域 -->
+  <rect x="500" y="780" width="200" height="60" fill="#000000" rx="10" ry="10" opacity="0.2" />
+  <text x="600" y="815" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">Blockchain Verified</text>
+
+  <!-- 水印 -->
+  <g transform="translate(600, 450) rotate(-30)" opacity="0.1">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="200" font-weight="bold" text-anchor="middle" fill="#000000">SIU</text>
+  </g>
+  
+  <style>
+    /* 确保所有文本可见 */
+    text {
+      paint-order: stroke;
+      stroke: #FFFFFF;
+      stroke-width: 3px;
+      stroke-linejoin: round;
+    }
+  </style>
+</svg> 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    @keyframes dash {
+      0% { stroke-dashoffset: 187; }
+      50% { stroke-dashoffset: 46.75; }
+      100% { stroke-dashoffset: 187; }
+    }
+    
+    .spinner {
+      transform-origin: center;
+      animation: rotate 2s linear infinite;
+    }
+    
+    .path {
+      stroke: #003087;
+      stroke-width: 4;
+      stroke-linecap: round;
+      stroke-dasharray: 187;
+      stroke-dashoffset: 0;
+      animation: dash 1.5s ease-in-out infinite;
+    }
+    
+    .path-accent {
+      stroke: #D4A017;
+      stroke-width: 4;
+      stroke-linecap: round;
+      stroke-dasharray: 50;
+      stroke-dashoffset: 0;
+      animation: dash 1.5s ease-in-out infinite;
+    }
+  </style>
+  
+  <g fill="none" class="spinner">
+    <!-- 主圆圈 -->
+    <circle class="path" cx="40" cy="40" r="30"/>
+    <!-- 金色装饰部分 -->
+    <circle class="path-accent" cx="40" cy="40" r="30" stroke-dasharray="30" stroke-dashoffset="150"/>
+    
+    <!-- 中心SIU标志 -->
+    <g transform="translate(40, 40)" fill="#003087" opacity="0.3">
+      <text x="0" y="5" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">SIU</text>
+    </g>
+  </g>
+</svg> 

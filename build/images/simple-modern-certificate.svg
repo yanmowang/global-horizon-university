@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg">
+  <!-- 奶油色背景 -->
+  <rect width="1200" height="900" fill="#FFFDF0" />
+  
+  <!-- 简单边框 -->
+  <rect x="50" y="50" width="1100" height="800" fill="none" stroke="#B58A3F" stroke-width="3" />
+  
+  <!-- 学校标志 -->
+  <image x="550" y="100" width="100" height="100" href="/images/logo/logo.svg" />
+  
+  <!-- 学校名称 -->
+  <text x="600" y="250" font-family="Georgia, serif" font-size="40" font-weight="bold" text-anchor="middle" fill="#000000">STRATFORD INTERNATIONAL UNIVERSITY</text>
+  
+  <!-- 证书标题 -->
+  <text x="600" y="320" font-family="Georgia, serif" font-size="60" font-weight="bold" text-anchor="middle" fill="#B58A3F">DIPLOMA</text>
+  
+  <!-- 证书文本 -->
+  <text x="600" y="380" font-family="Georgia, serif" font-size="22" text-anchor="middle" fill="#000000">This is to certify that</text>
+  
+  <!-- 学生姓名 -->
+  <text x="600" y="450" font-family="Georgia, serif" font-size="40" font-weight="bold" text-anchor="middle" fill="#000000">[RECIPIENT NAME]</text>
+  
+  <!-- 证书说明 -->
+  <text x="600" y="510" font-family="Georgia, serif" font-size="22" text-anchor="middle" fill="#000000">has successfully completed the online degree</text>
+  
+  <!-- 学位名称 -->
+  <text x="600" y="580" font-family="Georgia, serif" font-size="36" font-style="italic" font-weight="bold" text-anchor="middle" fill="#B58A3F">[PROGRAM/DEGREE]</text>
+  
+  <!-- 授予声明 -->
+  <text x="600" y="640" font-family="Georgia, serif" font-size="18" text-anchor="middle" fill="#000000">together with all the rights, privileges and honours which appertain thereto.</text>
+  
+  <!-- 日期 -->
+  <text x="600" y="680" font-family="Georgia, serif" font-size="18" text-anchor="middle" fill="#000000">Awarded Date</text>
+  <text x="600" y="710" font-family="Georgia, serif" font-size="22" text-anchor="middle" fill="#000000">[DATE]</text>
+  
+  <!-- 签名线 -->
+  <line x1="300" y1="780" x2="450" y2="780" stroke="#000000" stroke-width="1" />
+  <line x1="750" y1="780" x2="900" y2="780" stroke="#000000" stroke-width="1" />
+  
+  <!-- 签名人 -->
+  <text x="375" y="800" font-family="Georgia, serif" font-size="16" font-style="italic" text-anchor="middle" fill="#000000">Prof. Dr. Linda Foster</text>
+  <text x="375" y="825" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#000000">University President</text>
+  
+  <text x="825" y="800" font-family="Georgia, serif" font-size="16" font-style="italic" text-anchor="middle" fill="#000000">Prof. Dr. James Carpenter</text>
+  <text x="825" y="825" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#000000">Program Director</text>
+  
+  <!-- 印章图像 - 替换为实际logo -->
+  <image x="570" y="750" width="60" height="60" href="/images/logo/logo.svg" />
+  
+
+  <!-- 证书ID -->
+  <text x="600" y="870" font-family="Georgia, serif" font-size="14" text-anchor="middle" fill="#000000">Certificate ID: [CERTIFICATE-ID]</text>
+</svg> 

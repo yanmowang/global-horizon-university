@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 白色背景 -->
+  <rect width="800" height="600" fill="#ffffff"/>
+  
+  <!-- 外边框 - 深蓝色粗边框 -->
+  <rect x="20" y="20" width="760" height="560" fill="none" stroke="#00366C" stroke-width="5"/>
+  <rect x="30" y="30" width="740" height="540" fill="none" stroke="#00366C" stroke-width="2"/>
+  
+  <!-- 标题背景条 -->
+  <rect x="150" y="80" width="500" height="60" fill="#00366C"/>
+  
+  <!-- 大学名称 - 白底黑字 -->
+  <text x="400" y="120" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#FFFFFF">STRATFORD INTERNATIONAL UNIVERSITY</text>
+  
+  <!-- 证书标题 - 非常大字体 -->
+  <text x="400" y="190" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#000000">Certificate of Completion</text>
+  
+  <!-- 中文标题 -->
+  <text x="400" y="230" font-family="SimSun, serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#000000">毕业证书</text>
+  
+  <!-- 证书内容 - 使用黑色加粗文本 -->
+  <rect x="100" y="260" width="600" height="50" fill="#f0f0f0"/>
+  <text x="400" y="290" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#000000">This is to certify that</text>
+  
+  <!-- 获得者姓名占位符 - 特大字体 -->
+  <text x="400" y="340" font-family="Arial, sans-serif" font-style="italic" font-size="40" font-weight="bold" text-anchor="middle" fill="#00366C">[RECIPIENT NAME]</text>
+  
+  <!-- 课程说明 - 加粗显示 -->
+  <rect x="100" y="370" width="600" height="40" fill="#f0f0f0"/>
+  <text x="400" y="395" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#000000">has successfully completed the degree of</text>
+  
+  <!-- 课程名称占位符 - 特大字体加框突出显示 -->
+  <rect x="150" y="410" width="500" height="60" fill="#DAE8F5" stroke="#00366C" stroke-width="2"/>
+  <text x="400" y="450" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#00366C">[PROGRAM/DEGREE]</text>
+  
+  <!-- 日期占位符 - 清晰显示 -->
+  <text x="400" y="510" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#000000">Issued on [DATE]</text>
+  
+  <!-- 签名区域 - 加粗签名线和文字 -->
+  <line x1="200" y1="540" x2="300" y2="540" stroke="#000000" stroke-width="2"/>
+  <text x="250" y="560" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#000000">Dr. Elizabeth Stratford</text>
+  <text x="250" y="580" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#000000">University President</text>
+  
+  <line x1="500" y1="540" x2="600" y2="540" stroke="#000000" stroke-width="2"/>
+  <text x="550" y="560" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#000000">Prof. Michael Sterling</text>
+  <text x="550" y="580" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#000000">Dean of Academic Affairs</text>
+  
+  <!-- 证书编号占位符 - 明确显示 -->
+  <rect x="120" y="510" width="180" height="25" fill="#DAE8F5"/>
+  <text x="125" y="527" font-family="Courier, monospace" font-size="12" font-weight="bold" fill="#000000">ID: [CERTIFICATE-ID]</text>
+  
+  <!-- 区块链验证信息 - 明确显示 -->
+  <rect x="500" y="510" width="180" height="25" fill="#DAE8F5"/>
+  <text x="675" y="527" font-family="Courier, monospace" font-size="12" font-weight="bold" text-anchor="end" fill="#000000">Hash: [HASH]</text>
+  
+  <!-- 印章效果 - 加重线条加深颜色 -->
+  <circle cx="400" cy="480" r="40" fill="none" stroke="#00366C" stroke-width="3"/>
+  <circle cx="400" cy="480" r="35" fill="none" stroke="#00366C" stroke-width="1.5"/>
+  <text x="400" y="470" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#00366C">STRATFORD</text>
+  <text x="400" y="485" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#00366C">UNIVERSITY</text>
+  <text x="400" y="500" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#00366C">FOUNDED 2005</text>
+</svg> 

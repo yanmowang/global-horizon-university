@@ -1,0 +1,411 @@
+/**
+ * 全局样式覆盖 - 修复文本颜色对比度问题
+ */
+
+/* 全局文本强制可见性修复 */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div,
+li,
+a,
+button {
+  color: #111827 !important; /* 强制所有文本为深色 */
+}
+
+/* 白底或浅色背景上的文本使用深色 */
+body,
+.bg-white,
+.bg-gray-50,
+.bg-gray-100 {
+  color: #111827 !important; /* text-gray-900 - 几乎黑色 */
+}
+
+/* 仅在深色背景上使用浅色文本 */
+.bg-gray-800,
+.bg-gray-900,
+.bg-blue-900,
+.bg-blue-800,
+.bg-\[#3e86cc\],
+div[style*='background-color: #3e86cc'],
+div[style*='background-image: linear-gradient'] {
+  color: #ffffff !important; /* 白色文本 */
+}
+
+.bg-gray-800 *,
+.bg-gray-900 *,
+.bg-blue-900 *,
+.bg-blue-800 *,
+.bg-\[#3e86cc\] *,
+div[style*='background-color: #3e86cc'] *,
+div[style*='background-image: linear-gradient'] * {
+  color: #ffffff !important; /* 白色文本 */
+}
+
+/* 在白色背景上的文本颜色修复 */
+.bg-white .text-gray-400,
+.bg-white .text-gray-500,
+.bg-gray-50 .text-gray-400,
+.bg-gray-50 .text-gray-500,
+.bg-gray-100 .text-gray-400,
+.bg-gray-100 .text-gray-500 {
+  color: #374151 !important; /* text-gray-700 */
+}
+
+/* 表格和列表中的文本修复 */
+th.text-gray-500,
+td.text-gray-500,
+li.text-gray-500,
+dt.text-gray-500,
+dd.text-gray-500 {
+  color: #374151 !important; /* text-gray-700 */
+}
+
+/* 保留深色背景中的浅色文本 */
+.bg-gray-800 .text-gray-400,
+.bg-gray-900 .text-gray-400,
+.bg-blue-900 .text-gray-400,
+.bg-blue-800 .text-gray-400,
+.bg-\[#3e86cc\] .text-gray-400 {
+  color: #d1d5db !important; /* text-gray-300 */
+}
+
+/* 图片错误处理 */
+img.error-fallback {
+  object-fit: contain;
+  background-color: #f3f4f6;
+  padding: 1rem;
+  position: relative;
+}
+
+img.error-fallback::before {
+  content: '图片加载失败';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #4b5563;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* 全局链接颜色 */
+a:not([class]) {
+  color: #2563eb !important; /* text-blue-600 */
+}
+
+a:not([class]):hover {
+  color: #1e40af !important; /* text-blue-800 */
+}
+
+/* 确保查看详情按钮样式 - 提高选择器特异性 */
+a.查看详情,
+a[href*='detail'],
+a[href*='courses'],
+button[class*='primary'],
+.button-primary,
+[type='button'].primary {
+  display: inline-block !important;
+  padding: 0.5rem 1rem !important;
+  background-color: #0056b3 !important;
+  color: white !important;
+  border-radius: 0.375rem !important;
+  font-weight: 500 !important;
+  text-align: center !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+a.查看详情:hover,
+a[href*='detail']:hover,
+a[href*='courses']:hover,
+button[class*='primary']:hover,
+.button-primary:hover,
+[type='button'].primary:hover {
+  background-color: #00468e !important;
+}
+
+/* 确保按钮最小宽度 */
+button,
+.button,
+[type='button'],
+[type='submit'] {
+  min-width: 4rem;
+}
+
+/* 特别针对课程页面上的查看详情按钮 */
+.px-6.py-4.bg-gray-50 button,
+.px-6.py-4.bg-gray-50 a {
+  background-color: #0056b3 !important;
+  color: white !important;
+  border-radius: 0.375rem !important;
+}
+
+/* 针对ApplySection中的文本颜色 */
+.bg-\[#3e86cc\] h2,
+.bg-\[#3e86cc\] span,
+.bg-\[#3e86cc\] p,
+.bg-blue-700 h2,
+.bg-blue-700 span,
+.bg-blue-700 p {
+  color: white !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 确保按钮在各种背景下都有足够对比度 */
+button[variant='secondary'],
+.bg-\[#3e86cc\] button,
+.bg-blue-700 button {
+  background-color: white !important;
+  color: #3e86cc !important;
+  font-weight: 700 !important;
+  border: 2px solid white !important;
+}
+
+button[variant='secondary']:hover,
+.bg-\[#3e86cc\] button:hover,
+.bg-blue-700 button:hover {
+  background-color: #f3f4f6 !important;
+  color: #5d9ad9 !important;
+}
+
+/* 强制使用明亮蓝色背景 - 用于关键区域 */
+.blue-section,
+[class*='blue-section'],
+.bg-blue-700,
+.bg-blue-800,
+.bg-blue-900,
+.bg-\[#3e86cc\],
+div[style*='background-image: linear-gradient'] {
+  background-color: rgba(62, 134, 204, 0.9) !important;
+  background-image: linear-gradient(
+    135deg,
+    rgba(93, 154, 217, 0.9) 0%,
+    rgba(62, 134, 204, 0.9) 100%
+  ) !important;
+}
+
+/* 强制加深所有重要文本的阴影效果 */
+.blue-section h1,
+.blue-section h2,
+.blue-section h3,
+.blue-section p,
+.blue-section span,
+.bg-blue-700 h1,
+.bg-blue-700 h2,
+.bg-blue-700 h3,
+.bg-blue-700 p,
+.bg-blue-700 span,
+.bg-\[#3e86cc\] h1,
+.bg-\[#3e86cc\] h2,
+.bg-\[#3e86cc\] h3,
+.bg-\[#3e86cc\] p,
+.bg-\[#3e86cc\] span {
+  color: white !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+  font-weight: 600 !important;
+}
+
+/* 登录/注册页面样式修复 */
+.min-h-screen.flex.items-center.justify-center h2 {
+  color: #111827 !important;
+  font-weight: 800 !important;
+}
+
+.min-h-screen.flex.items-center.justify-center p {
+  color: #4b5563 !important;
+}
+
+.min-h-screen.flex.items-center.justify-center label {
+  color: #374151 !important;
+}
+
+/* 语言切换器样式修复 */
+select,
+option {
+  color: #111827 !important;
+  background-color: white !important;
+}
+
+/* 确保所有表单元素可见 */
+input,
+textarea,
+select {
+  color: #111827 !important;
+  background-color: white !important;
+  border: 1px solid #d1d5db !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af !important;
+}
+
+/* 确保登录/注册按钮样式正确 */
+a[href='/login'] {
+  color: #0056b3 !important;
+  background-color: #eaf5ff !important;
+}
+
+a[href='/register'] {
+  color: white !important;
+  background-color: #0056b3 !important;
+}
+
+/* 加深所有圆角浅蓝色按钮的颜色 */
+.bg-blue-50,
+.bg-blue-100,
+[class*='bg-blue-50'],
+[class*='bg-blue-100'],
+.rounded-full.bg-blue-50,
+.rounded-full.bg-blue-100,
+.inline-block.px-3.py-1.mb-4.text-xs.font-semibold.tracking-wider.text-blue-800.uppercase.bg-blue-100.rounded-full {
+  background-color: #1e40af !important; /* 使用 blue-800 */
+  color: white !important;
+  border-color: #1e3a8a !important; /* 使用 blue-900 */
+  font-weight: bold !important;
+}
+
+/* 确保所有蓝色背景元素中的文本为白色 */
+.bg-blue-50 *,
+.bg-blue-100 *,
+[class*='bg-blue-50'] *,
+[class*='bg-blue-100'] *,
+.rounded-full.bg-blue-50 *,
+.rounded-full.bg-blue-100 *,
+.inline-block.px-3.py-1.mb-4.text-xs.font-semibold.tracking-wider.text-blue-800.uppercase.bg-blue-100.rounded-full
+  *,
+button.rounded-full *,
+a.rounded-full *,
+span.rounded-full *,
+div.rounded-full * {
+  color: white !important;
+}
+
+/* 特别处理圆角按钮 */
+button.rounded-full,
+a.rounded-full,
+span.rounded-full,
+div.rounded-full {
+  background-color: #1e40af !important;
+  color: white !important;
+  border-color: #1e3a8a !important;
+}
+
+.rounded-full.text-blue-600,
+.rounded-full.text-blue-700,
+.rounded-full.text-blue-800 {
+  color: white !important;
+}
+
+/* 特别处理带有特定文本的按钮 */
+[class*='学员招生'],
+[class*='学生咨询'],
+[class*='企业合作'],
+button:contains('学员招生'),
+button:contains('学生咨询'),
+button:contains('企业合作'),
+a:contains('学员招生'),
+a:contains('学生咨询'),
+a:contains('企业合作') {
+  background-color: #1e40af !important;
+  color: white !important;
+  border-color: #1e3a8a !important;
+  font-weight: bold !important;
+}
+
+/* 修复下拉菜单的文本颜色 */
+.bg-white.border.rounded-md.absolute.shadow-lg * {
+  color: #111827 !important;
+}
+
+/* 修复导航链接样式 */
+nav a {
+  color: #4b5563 !important;
+}
+
+nav a.text-blue-600,
+nav a.font-medium {
+  color: #2563eb !important;
+}
+
+/* 修复语言切换下拉框背景色 */
+div.relative select {
+  background-color: white !important;
+  color: #111827 !important;
+}
+
+/* 修复手机版导航菜单 */
+.md\:hidden.bg-white {
+  background-color: white !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+.md\:hidden.bg-white div.space-y-1 a {
+  color: #111827 !important;
+  display: block !important;
+}
+
+.md\:hidden.bg-white div.space-y-1 a.border-blue-500 {
+  color: #2563eb !important;
+}
+
+/* 修复特定组件的显示样式 */
+.certificate-container {
+  background-color: white !important;
+}
+
+/* 确保模态框文本可见 */
+div[role='dialog'] * {
+  color: #111827 !important;
+}
+
+div[role='dialog'] h3 {
+  color: #111827 !important;
+  font-weight: bold !important;
+}
+
+div[role='dialog'] .bg-blue-600,
+div[role='dialog'] .bg-blue-700,
+div[role='dialog'] .bg-\[#3e86cc\] {
+  color: white !important;
+}
+
+div[role='dialog'] .bg-blue-600 *,
+div[role='dialog'] .bg-blue-700 *,
+div[role='dialog'] .bg-\[#3e86cc\] * {
+  color: white !important;
+}
+
+/* 修复导航栏在深色背景下的显示 */
+header.bg-blue-900 span,
+header.bg-blue-900 a,
+header.bg-\[#3e86cc\] span,
+header.bg-\[#3e86cc\] a {
+  color: white !important;
+}
+
+/* 移动端语言切换器修复 */
+@media (max-width: 768px) {
+  .md\:hidden select {
+    background-color: white !important;
+    color: #111827 !important;
+    border: 1px solid #d1d5db !important;
+    padding: 0.25rem 0.5rem !important;
+    border-radius: 0.375rem !important;
+  }
+
+  .md\:hidden .space-y-3 a {
+    margin-bottom: 0.5rem !important;
+    display: block !important;
+    text-align: center !important;
+  }
+}

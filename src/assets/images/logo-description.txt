@@ -1,0 +1,30 @@
+Stratford International University (SIU) Logo Description:
+
+1. Design:
+   - Circular badge style
+   - Deep blue background (#003087)
+   - Gold text and accents (#D4A017)
+   - Features a book and olive branches (symbolizing wisdom and peace)
+   - "SIU" prominently displayed in the center
+   - Full name "Stratford International University" around the circle
+
+2. Slogan:
+   - In English: "Empowering Minds, Inspiring Futures"
+   - In Chinese: "启迪心灵，塑造未来"
+
+3. Usage:
+   - Page header/navigation
+   - Login page
+   - Certificates
+   - Official documentation
+
+4. Color Scheme:
+   - Primary: Deep Blue (#003087)
+   - Secondary: Gold (#D4A017)
+   - Accent: White (#FFFFFF)
+   - Text: Dark Gray (#333333)
+
+5. Typography:
+   - Headers: Serif font (e.g., Georgia, Times New Roman)
+   - Body: Sans-serif font (e.g., Arial, Helvetica)
+   - Accents: Script font for certificate signatures 

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg">
+  <!-- 米色背景 -->
+  <rect width="1200" height="900" fill="#FFFEF0" />
+  
+  <g transform="translate(0, 20)">
+    <!-- 金色边框 -->
+    <rect x="20" y="20" width="1160" height="860" fill="none" stroke="#C19A49" stroke-width="5" />
+    <rect x="40" y="40" width="1120" height="820" fill="none" stroke="#C19A49" stroke-width="1" />
+    
+    <!-- 角落装饰 -->
+    <path d="M40,40 L90,40 L90,45 L45,45 L45,90 L40,90 Z" fill="#C19A49" />
+    <path d="M1160,40 L1110,40 L1110,45 L1155,45 L1155,90 L1160,90 Z" fill="#C19A49" />
+    <path d="M40,860 L90,860 L90,855 L45,855 L45,810 L40,810 Z" fill="#C19A49" />
+    <path d="M1160,860 L1110,860 L1110,855 L1155,855 L1155,810 L1160,810 Z" fill="#C19A49" />
+
+    <!-- 顶部校徽 - 调大, 调整位置 -->
+    <image x="540" y="40" width="120" height="120" href="/images/logo/logo.svg" />
+
+    <!-- New Accreditation Logo Placeholder -->
+    <image x="50" y="50" width="100" height="35" href="/images/accreditation_logo.svg"/>
+
+    <!-- 学校名称 - 黑色, 下移 -->
+    <text x="600" y="200" font-family="Times New Roman, serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#000000">STRATFORD INTERNATIONAL UNIVERSITY</text>
+    
+    <!-- 证书标题 - 蓝色, 下移, 调整内容和字体大小以适应新标题 -->
+    <text x="600" y="265" font-family="Garamond, serif" font-size="40" font-weight="bold" text-anchor="middle" fill="#003087">Master of Business Administration Degree</text>
+    
+    <!-- 证书文本 - 黑色, 调整y坐标 -->
+    <text x="600" y="334" font-family="Times New Roman, serif" font-size="20" text-anchor="middle" fill="#000000">The Stratford International University hereby certifies that</text>
+    
+    <!-- 接收者姓名 - 黑色, 斜体, 调整y坐标 -->
+    <text x="600" y="389" font-family="Times New Roman, serif" font-size="38" font-weight="bold" font-style="italic" text-anchor="middle" fill="#000000">[RECIPIENT_NAME]</text>
+    
+    <!-- 学位文本 1 - 黑色, 调整y坐标 -->
+    <text x="600" y="444" font-family="Times New Roman, serif" font-size="20" text-anchor="middle" fill="#000000">has fulfilled all academic requirements for the degree of</text>
+    
+    <!-- 学位名称 (Program) - 金色, 斜体, 调整y坐标 -->
+    <text x="600" y="501" font-family="Times New Roman, serif" font-size="34" font-style="italic" font-weight="bold" text-anchor="middle" fill="#C19A49">[PROGRAM]</text>
+    
+    <!-- 学位文本 2 - 黑色, 调整y坐标 -->
+    <text x="600" y="558" font-family="Times New Roman, serif" font-size="20" text-anchor="middle" fill="#000000">and is hereby granted this Degree with all attendant rights and privileges.</text>
+    
+    <!-- 荣誉标签 - 金色, 斜体, 调整y坐标 -->
+    <text x="600" y="593" font-family="Times New Roman, serif" font-size="22" font-style="italic" text-anchor="middle" fill="#C19A49">Cum Honore</text>
+    
+    <!-- 日期文本 - 黑色, 调整y坐标 -->
+    <text x="600" y="634" font-family="Times New Roman, serif" font-size="20" text-anchor="middle" fill="#000000">Awarded Date</text>
+    <text x="600" y="665" font-family="Times New Roman, serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#000000">[ISSUE_DATE]</text>
+    
+    <!-- 签名区域 - 调整y坐标以适应上方文本的下移和规则 -->
+    <!-- Last main content line y=665 (baseline of ISSUE_DATE) -->
+    <!-- Signature images y = 665 (baseline) + approx 11 (half date height) + 60 (spacing) = 736 -->
+    <image x="190" y="710" width="200" height="70" href="/images/signatures/president.svg" />
+    <line x1="150" y1="785" x2="400" y2="785" stroke="#C19A49" stroke-width="1.5" /> 
+    <text x="275" y="805" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="#000000">Prof. Dr. Linda Foster, University President</text>
+    
+    <image x="810" y="710" width="200" height="70" href="/images/signatures/director.svg" />
+    <line x1="800" y1="785" x2="1050" y2="785" stroke="#C19A49" stroke-width="1.5" />
+    <text x="925" y="805" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="#000000">Prof. Dr. James Carpenter, Director, MBA Program</text>
+    
+    <!-- 简单 SIU Logo - 调整y坐标 -->
+    <!-- Signature text bottom approx y=805 + 3 (descender) = 808 -->
+    <!-- Seal top = 808 + 20 = 828. Seal center y = 828 + 48 (radius) = 876 -->
+    <!-- This is too low, will go past border. Let's re-evaluate signature spacing. -->
+    <!-- Let's try to make signatures more compact or adjust definition of "body text". -->
+    <!-- If "body text" ends at "Cum Honore" y=593. Then signatures start at 593 + 11 + 60 = 664 (image y) -->
+    <!-- Let's use: Image y=664. Line y1=664+70+5 = 739. Text y=739+20=759. -->
+    <!-- Seal top = 759+3(descender)+20 = 782. Seal center y = 782+48 = 830. -->
+    <g transform="translate(600, 830)">
+      <circle cx="0" cy="0" r="45" fill="#003087" />
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#C19A49" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="48" fill="none" stroke="#C19A49" stroke-width="1" />
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" dominant-baseline="central" fill="#C19A49">SIU</text>
+    </g>
+
+    <!-- 证书编号 - 移到内框底部 -->
+    <!-- Seal bottom y = 830+48 = 878. -->
+    <!-- Cert ID y = 878 + 10 + 7 = 895. This is outside the 880 inner border bottom. -->
+    <!-- The whole layout is too tall. Need to compress. -->
+    <!-- Re-plan for y-coordinates to fit. Max y for content top of inner border = 20+40 = 60. Bottom = 20+40+820 = 880 -->
+
+    <!-- REVISED Y-COORDINATES (SECOND ATTEMPT DURING EDIT) -->
+    <!-- Title y=265 -->
+    <!-- Certifies that y=325 (Spacing: 265_title_baseline + 20_half_title + 30_space + 10_half_this_line) -->
+    <!-- Recipient y=375 (Spacing: 325_prev_baseline + 10 + 30_space + 10_half_this_line) Note: Recipient font size is 38 -->
+    <!-- Recipient y=380 (325 + 10 + (38*1.5/2) + (38/2)) -> 325+10+28.5+19 = 382.5. Let's use 380. -->
+    <!-- Fulfilled req y=425 (380_prev_baseline + 19_half_prev + 15_space + 10_half_this) -->
+    <!-- Program y=470 (425_prev_baseline + 10_half_prev + 20_space + 17_half_this_34px_font) -->
+    <!-- Granted Degree y=515 (470_prev_baseline + 17_half_prev + 15_space + 10_half_this) -->
+    <!-- Cum Honore y=550 (515_prev_baseline + 10_half_prev + 15_space + 11_half_this_22px_font) -->
+    <!-- Awarded Date Label y=580 (550_prev_baseline + 11_half_prev + 10_space + 10_half_this) -->
+    <!-- Awarded Date Value y=605 (580_prev_baseline + 10_half_prev + 5_space + 11_half_this_22px_font) -->
+    <!-- End of main text content: y=605 (baseline of date value) -->
+    <!-- Signature images y = 605 + 11 (half_date_H) + 40 (REDUCED spacing) = 656 -->
+    <image x="190" y="656" width="200" height="70" href="/images/signatures/president.svg" />
+    <line x1="150" y1="731" x2="400" y2="731" stroke="#C19A49" stroke-width="1.5" /> 
+    <text x="275" y="751" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="#000000">Prof. Dr. Linda Foster, University President</text>
+    
+    <image x="810" y="656" width="200" height="70" href="/images/signatures/director.svg" />
+    <line x1="800" y1="731" x2="1050" y2="731" stroke="#C19A49" stroke-width="1.5" />
+    <text x="925" y="751" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="#000000">Prof. Dr. James Carpenter, Director, MBA Program</text>
+    
+    <!-- Seal: signature text bottom approx y=751+3=754. Seal top = 754 + 15 (REDUCED spacing) = 769 -->
+    <!-- Seal center y = 769 + 48 = 817 -->
+    <g transform="translate(600, 817)">
+      <circle cx="0" cy="0" r="45" fill="#003087" />
+      <circle cx="0" cy="0" r="42" fill="none" stroke="#C19A49" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="48" fill="none" stroke="#C19A49" stroke-width="1" />
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="40" font-weight="bold" text-anchor="middle" dominant-baseline="central" fill="#C19A49">SIU</text>
+    </g>
+
+    <!-- Certificate ID: Seal bottom y = 817+48 = 865. Cert ID y = 865 + 5 (space) + 7 = 877 -->
+    <!-- This is very close to the bottom edge 880. -->
+    <text x="600" y="855" font-family="Times New Roman, serif" font-size="14" text-anchor="middle" fill="#000000">Certificate ID: [CERTIFICATE_NUMBER]</text>
+    <!-- Final adjustment of y-coordinates based on the "REVISED" block: -->
+    <text x="600" y="325" font-family="Times New Roman, serif" font-size="20" text-anchor="middle" fill="#000000">The Stratford International University hereby certifies that</text>
+    <text x="600" y="380" font-family="Times New Roman, serif" font-size="38" font-weight="bold" font-style="italic" text-anchor="middle" fill="#000000">[RECIPIENT_NAME]</text>
+    <text x="600" y="425" font-family="Times New Roman, serif" font-size="20" text-anchor="middle" fill="#000000">has fulfilled all academic requirements for the degree of</text>
+    <text x="600" y="470" font-family="Times New Roman, serif" font-size="34" font-style="italic" font-weight="bold" text-anchor="middle" fill="#C19A49">[PROGRAM]</text>
+    <text x="600" y="515" font-family="Times New Roman, serif" font-size="20" text-anchor="middle" fill="#000000">and is hereby granted this Degree with all attendant rights and privileges.</text>
+    <text x="600" y="550" font-family="Times New Roman, serif" font-size="22" font-style="italic" text-anchor="middle" fill="#C19A49">Cum Honore</text>
+    <text x="600" y="580" font-family="Times New Roman, serif" font-size="20" text-anchor="middle" fill="#000000">Awarded Date</text>
+    <text x="600" y="605" font-family="Times New Roman, serif" font-size="22" font-weight="bold" text-anchor="middle" fill="#000000">[ISSUE_DATE]</text>
+    <!-- Cert ID new y to be 870 for a bit more margin from bottom -->
+    <text x="600" y="870" font-family="Times New Roman, serif" font-size="14" text-anchor="middle" fill="#000000">Certificate ID: [CERTIFICATE_NUMBER]</text>
+  </g>
+</svg> 

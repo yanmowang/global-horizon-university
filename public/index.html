@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stratford International University</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <!-- 添加Google Fonts以支持多语言字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Roboto', 'Noto Sans SC', sans-serif;
+        color: #111827 !important; /* 强制文本为深色 */
+      }
+      html[lang='zh-CN'] body {
+        font-family: 'Noto Sans SC', 'Roboto', sans-serif;
+      }
+      html[lang='en'] body {
+        font-family: 'Roboto', 'Noto Sans SC', sans-serif;
+      }
+
+      /* 强制文本可见性修复 */
+      body,
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      span,
+      div,
+      li,
+      a,
+      button {
+        color: #111827 !important; /* 强制文本为深色 */
+      }
+
+      /* 避免深色背景上的文本也变成深色 */
+      [class*='bg-blue'],
+      [class*='bg-gray-800'],
+      [class*='bg-gray-900'],
+      [style*='background-color: #003087'],
+      [style*='background-image: linear-gradient'] {
+        color: white !important;
+      }
+
+      [class*='bg-blue'] *,
+      [class*='bg-gray-800'] *,
+      [class*='bg-gray-900'] *,
+      [style*='background-color: #003087'] *,
+      [style*='background-image: linear-gradient'] * {
+        color: white !important;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <div id="root"></div>
+    <noscript>
+      <div style="text-align: center; padding: 20px">
+        <p>您需要启用JavaScript才能运行此应用。</p>
+        <p>You need to enable JavaScript to run this app.</p>
+      </div>
+    </noscript>
+  </body>
+</html>

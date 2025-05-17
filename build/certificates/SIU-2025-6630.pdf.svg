@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with elegant pattern -->
+  <rect width="1200" height="900" fill="#FFFDF0" />
+  <rect x="30" y="30" width="1140" height="840" fill="none" stroke="#D4A017" stroke-width="8"/>
+  <rect x="50" y="50" width="1100" height="800" fill="none" stroke="#D4A017" stroke-width="3"/>
+  
+  <!-- Pattern background -->
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="50" height="50" fill="none" stroke="#FFF5E1" stroke-width="1" opacity="0.2"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#grid)" opacity="0.3" />
+  
+  <!-- University logo -->
+  <circle cx="600" cy="150" r="80" fill="#003087" stroke="#D4A017" stroke-width="3" />
+  <circle cx="600" cy="150" r="70" fill="#003087" stroke="#D4A017" stroke-width="1" />
+  <text x="600" y="175" font-family="Times New Roman, serif" font-size="80" font-weight="bold" text-anchor="middle" fill="#D4A017">SIU</text>
+  
+  <!-- University name -->
+  <text x="600" y="280" font-family="Times New Roman, serif" font-size="40" font-weight="bold" text-anchor="middle" fill="#003087">STRATFORD INTERNATIONAL UNIVERSITY</text>
+  
+  <!-- Certificate title -->
+  <text x="600" y="350" font-family="Times New Roman, serif" font-size="50" font-weight="bold" text-anchor="middle" fill="#D4A017">CERTIFICATE OF COMPLETION</text>
+  
+  <!-- Certificate text -->
+  <text x="600" y="420" font-family="Times New Roman, serif" font-size="24" text-anchor="middle" fill="#000000">The Stratford International University hereby certifies that</text>
+  
+  <!-- Recipient name placeholder -->
+  <text x="600" y="500" font-family="Times New Roman, serif" font-size="40" font-style="italic" font-weight="bold" text-anchor="middle" fill="#000000">iyoup11</text>
+  
+  <!-- Program text -->
+  <text x="600" y="570" font-family="Times New Roman, serif" font-size="24" text-anchor="middle" fill="#000000">has fulfilled the requirements for the degree of</text>
+  
+  <!-- Program name placeholder -->
+  <text x="600" y="640" font-family="Times New Roman, serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#D4A017">Master of Business Administration</text>
+  
+  <!-- Additional text -->
+  <text x="600" y="690" font-family="Times New Roman, serif" font-size="20" text-anchor="middle" fill="#000000">and is awarded this Certificate of Completion with all rights, privileges, and honors appertaining thereto.</text>
+  
+  <!-- Decorative elements -->
+  <path d="M350,610 C400,600 450,650 500,630 S550,600 600,630 S650,660 700,630 S750,600 800,630 S850,650 900,620" fill="none" stroke="#D4A017" stroke-width="1" opacity="0.5" />
+  
+  <!-- Signatures section -->
+  <text x="300" y="780" font-family="Times New Roman, serif" font-size="22" font-style="italic" text-anchor="middle" fill="#000000">Linda Foster</text>
+  <line x1="200" y1="760" x2="400" y2="760" stroke="#000000" stroke-width="1" />
+  <text x="300" y="800" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="#000000">Prof. Dr. Linda Foster</text>
+  <text x="300" y="820" font-family="Times New Roman, serif" font-size="14" text-anchor="middle" fill="#000000">University President</text>
+  
+  <text x="900" y="780" font-family="Times New Roman, serif" font-size="22" font-style="italic" text-anchor="middle" fill="#000000">James Carpenter</text>
+  <line x1="800" y1="760" x2="1000" y2="760" stroke="#000000" stroke-width="1" />
+  <text x="900" y="800" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="#000000">Prof. Dr. James Carpenter</text>
+  <text x="900" y="820" font-family="Times New Roman, serif" font-size="14" text-anchor="middle" fill="#000000">Director, MBA Program</text>
+  
+  <!-- Certificate seal -->
+  <circle cx="600" cy="750" r="50" fill="none" stroke="#D4A017" stroke-width="2" />
+  <circle cx="600" cy="750" r="45" fill="none" stroke="#D4A017" stroke-width="1" />
+  <text x="600" y="760" font-family="Times New Roman, serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#D4A017">VERIFIED</text>
+  <text x="600" y="780" font-family="Times New Roman, serif" font-size="10" text-anchor="middle" fill="#D4A017">SIU</text>
+  
+  <!-- Date and certificate number -->
+  <text x="600" y="850" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="#000000">Issued on: May 6, 2025</text>
+  <text x="600" y="870" font-family="Times New Roman, serif" font-size="14" text-anchor="middle" fill="#000000">Certificate ID: SIU-2025-6630</text>
+  
+  <!-- Decorative corner elements -->
+  <path d="M80,80 L110,80 L110,110" fill="none" stroke="#D4A017" stroke-width="2" />
+  <path d="M1120,80 L1090,80 L1090,110" fill="none" stroke="#D4A017" stroke-width="2" />
+  <path d="M80,820 L110,820 L110,790" fill="none" stroke="#D4A017" stroke-width="2" />
+  <path d="M1120,820 L1090,820 L1090,790" fill="none" stroke="#D4A017" stroke-width="2" />
+</svg> 

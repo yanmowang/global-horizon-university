@@ -1,0 +1,436 @@
+{
+  "header": {
+    "home": "Home",
+    "courses": "Courses",
+    "certificates": "Certificates",
+    "verifyCertificate": "Verify Certificate",
+    "about": "About Us",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register",
+    "universityChinese": "Stratford International University"
+  },
+  "footer": {
+    "about": "About Us",
+    "courses": "Courses",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "copyright": "Copyright",
+    "allRightsReserved": "All Rights Reserved"
+  },
+  "homePage": {
+    "hero": {
+      "title": "Global Education for Tomorrow's Leaders",
+      "subtitle": "Unlock your potential with our world-class programs and internationally recognized certificates",
+      "explore": "Explore Programs",
+      "imageAlt": "Campus View",
+      "tagline": "Globally Recognized Online Education"
+    },
+    "stats": {
+      "graduationRate": "Graduate Employment Rate",
+      "companies": "Corporate Partners",
+      "countries": "Student Countries",
+      "experience": "Years of Experience"
+    },
+    "featuredCourses": {
+      "business": {
+        "title": "Bachelor of Business Administration",
+        "description": "Comprehensive program developing global business leadership capabilities"
+      },
+      "dataScience": {
+        "title": "Master of Data Science & AI",
+        "description": "Master cutting-edge technologies to lead digital transformation"
+      },
+      "international": {
+        "title": "PhD in International Relations",
+        "description": "In-depth research on global politics, economics, and diplomatic policies"
+      }
+    },
+    "courseLevels": {
+      "undergraduate": "Undergraduate",
+      "graduate": "Graduate",
+      "doctorate": "Doctorate"
+    },
+    "duration": {
+      "years": "{{count}} years",
+      "range": "{{min}}-{{max}} years"
+    },
+    "testimonials": {
+      "title": "Student Testimonials",
+      "subtitle": "Hear from our global student community",
+      "student1": {
+        "name": "Zhang Ming",
+        "role": "BBA Graduate, Class of 2022",
+        "content": "My learning experience at SIU completely transformed my career trajectory. The course content is closely integrated with industry practices, and the professors have rich practical experience. After graduation, I immediately secured a job opportunity at an international company."
+      },
+      "student2": {
+        "name": "Li Ting",
+        "role": "Data Science Masters, Class of 2021",
+        "content": "As an international student, I experienced unparalleled support and inclusivity at SIU. The flexible learning approach allowed me to balance family and studies while making friends from around the world."
+      }
+    },
+    "features": {
+      "title": "Why Choose Us",
+      "subtitle": "Discover the advantages of joining our global learning community",
+      "description": "We provide world-class educational resources to help you stand out in the global job market",
+      "globalRecognition": {
+        "title": "Global Recognition",
+        "description": "Our certificates are recognized by employers and institutions worldwide"
+      },
+      "flexibleLearning": {
+        "title": "Flexible Learning",
+        "description": "Study at your own pace with our adaptive learning platforms"
+      },
+      "expertFaculty": {
+        "title": "Expert Faculty",
+        "description": "Learn from distinguished professors and industry professionals"
+      },
+      "careerSupport": {
+        "title": "Career Support",
+        "description": "Access career services and global employment networks"
+      }
+    },
+    "programs": {
+      "title": "Featured Programs",
+      "subtitle": "Explore our most popular academic offerings",
+      "viewAll": "View All Programs"
+    },
+    "cta": {
+      "title": "Ready to start your learning journey?",
+      "subtitle": "Register now and begin a new chapter in your career.",
+      "register": "Register Now",
+      "contactUs": "Contact Us",
+      "applyNow": "Apply Now",
+      "action": "Take Action Now"
+    }
+  },
+  "certificatesPage": {
+    "title": "Certificate Wall",
+    "subtitle": "Browse globally recognized certificates earned by our graduates, each representing outstanding academic achievement.",
+    "searchPlaceholder": "Search certificates (name, course, certificate ID)",
+    "noResultsTitle": "No matching certificates found",
+    "noResultsText": "Please try other search keywords",
+    "download": "Download",
+    "downloading": "Downloading...",
+    "verifySection": {
+      "title": "Verify Your Certificate",
+      "description": "Confirm the authenticity and validity of certificates through our online verification system. Each certificate has a unique identification code and blockchain record.",
+      "action": "Verify Now"
+    },
+    "certificateModal": {
+      "studentInfo": "Student Information",
+      "certificateDetails": "Certificate Details",
+      "name": "Name",
+      "course": "Course",
+      "issueDate": "Issue Date",
+      "certificateId": "Certificate ID",
+      "download": "Download Certificate",
+      "verify": "Verify Certificate",
+      "close": "Close"
+    },
+    "ariaLabel": "View {name}'s {course} certificate"
+  },
+  "login": {
+    "title": "Login to Your Account",
+    "orRegister": "or",
+    "registerLink": "register a new account",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "signIn": "Login",
+    "signingIn": "Logging in...",
+    "errors": {
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "passwordRequired": "Password is required",
+      "invalidCredentials": "Invalid email or password",
+      "loginFailed": "Login failed. Please try again later."
+    }
+  },
+  "register": {
+    "title": "Register New Account",
+    "alreadyHaveAccount": "Already have an account?",
+    "loginLink": "Login",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Enter your full name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Create a password (min. 8 characters)",
+    "confirmPasswordLabel": "Confirm Password",
+    "confirmPasswordPlaceholder": "Confirm your password",
+    "agreeTerms": "I agree to the",
+    "termsLink": "Terms of Service",
+    "privacyLink": "Privacy Policy",
+    "and": "and",
+    "register": "Register",
+    "registering": "Registering...",
+    "success": "Registration successful! Please login to continue.",
+    "errors": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "emailTaken": "Email is already in use",
+      "passwordRequired": "Password is required",
+      "passwordTooShort": "Password must be at least 8 characters",
+      "passwordMismatch": "Passwords do not match",
+      "termsRequired": "You must agree to the terms of service",
+      "registerFailed": "Registration failed. Please try again later."
+    }
+  },
+  "aboutPage": {
+    "title": "About Stratford International University",
+    "subtitle": "Forging ahead, shaping the future. We are a prestigious institution dedicated to providing high-quality global education.",
+    "mission": {
+      "label": "Our Mission",
+      "title": "Cultivating Future Leaders with a Global Perspective",
+      "description1": "Stratford International University was established in 1995. For the past three decades, we have been committed to providing exceptional educational experiences, fostering students' global vision and professional skills, and preparing them for success on the global stage.",
+      "description2": "As an international university, we have established close collaborative relationships with top universities across many countries and regions worldwide. We provide students with extensive learning opportunities and rich cultural experiences. Our curriculum is designed and taught by industry experts and academic leaders, ensuring the highest standards of education."
+    },
+    "exploreCourses": "Explore Our Courses",
+    "campusImageAlt": "Stratford Campus",
+    "advantages": {
+      "label": "Our Advantages",
+      "title": "Why Choose Stratford International University",
+      "subtitle": "We provide multiple advantages to ensure students receive the best learning experience and career development opportunities.",
+      "globalRecognition": {
+        "title": "Global Recognition",
+        "description": "Our certificates and degrees are recognized in many countries and regions worldwide, providing unlimited possibilities for your future career. Wherever you are in the world, our qualifications will open the door to success for you."
+      },
+      "excellence": {
+        "title": "Educational Excellence",
+        "description": "Our courses are designed and taught by industry experts and academic leaders, combining practical experience and theoretical knowledge to ensure you receive the highest quality educational experience and practical professional skills."
+      },
+      "network": {
+        "title": "Global Network",
+        "description": "Join our global alumni network to connect with professionals from different countries and industries, expanding your career opportunities and connections."
+      },
+      "security": {
+        "title": "Secure Certification",
+        "description": "Our certificates use blockchain technology to ensure their authenticity and security, which can be verified online at any time, providing reliable protection for your academic credentials."
+      },
+      "campus": {
+        "title": "Modern Campus",
+        "description": "Our campus is equipped with advanced teaching facilities and technology, providing students with a comfortable, modern learning environment that supports various academic activities and research projects."
+      },
+      "support": {
+        "title": "Personalized Support",
+        "description": "We provide comprehensive student support services, including academic guidance, career planning, and personal development, ensuring that each student can fully realize their potential and achieve their goals."
+      }
+    },
+    "history": {
+      "label": "Our History",
+      "title": "Pioneering the Path of Global Education Excellence",
+      "subtitle": "Looking back at our development journey from 1995, witness our continuous pursuit of educational excellence.",
+      "foundingYear": "Founded",
+      "partners": "International Partners",
+      "alumni": "Alumni",
+      "phase1": {
+        "title": "Founding Phase (1995-2000)",
+        "description": "Stratford International University was founded in 1995, initially offering only a few business and management courses. Under the visionary leadership of the founders, the university quickly established a good academic reputation."
+      },
+      "phase2": {
+        "title": "Development & Growth (2001-2010)",
+        "description": "During this period, the university significantly expanded its course offerings, adding programs in technology, health, and humanities. At the same time, the first batch of international partnerships were established, taking the first step towards globalization."
+      },
+      "phase3": {
+        "title": "Global Expansion (2011-2020)",
+        "description": "During these ten years, we established branch campuses and learning centers in multiple countries, greatly enhancing our international influence. Our graduates began to hold important positions in leading institutions and companies around the world."
+      },
+      "phase4": {
+        "title": "Digital Innovation (2021-Present)",
+        "description": "In recent years, we have heavily invested in educational technology and digital innovation, launching an online learning platform and applying blockchain technology to our certificate verification system. We are working with global leading companies to provide students with more practical learning opportunities."
+      }
+    },
+    "contact": {
+      "title": "Want to learn more about us?",
+      "subtitle": "Whether you want to apply for our courses or have any questions about our university, our team is ready to assist you. Please contact us through the following methods, and we will reply as soon as possible.",
+      "contactUs": "Contact Us",
+      "faq": "FAQ",
+      "imageAlt": "Contact Us"
+    }
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "subtitle": "Whether you have questions or need assistance, our team is ready to support you.",
+    "contactInfo": {
+      "title": "Contact Methods",
+      "address": {
+        "title": "Address",
+        "value": "123 University Ave, London, UK"
+      },
+      "phone": {
+        "title": "Phone",
+        "value": "+1 (888) 123-4567"
+      },
+      "email": {
+        "title": "Email",
+        "value": "info@stratford.edu"
+      },
+      "hours": {
+        "title": "Working Hours",
+        "weekdays": "Monday to Friday: 9:00 - 17:00",
+        "saturday": "Saturday: 10:00 - 15:00",
+        "sunday": "Sunday: Closed"
+      },
+      "social": {
+        "title": "Follow Us"
+      }
+    },
+    "form": {
+      "title": "Send Message",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send Message",
+      "successMessage": "Your message has been successfully submitted. We will contact you soon.",
+      "subjectPlaceholder": "Please select",
+      "subjectOptions": {
+        "general": "General Inquiry",
+        "admission": "Admission Application",
+        "course": "Course Inquiry",
+        "certificate": "Certificate Verification",
+        "other": "Other"
+      }
+    },
+    "map": {
+      "title": "Stratford International University Location"
+    }
+  },
+  "coursesPage": {
+    "title": "Our Courses",
+    "subtitle": "Explore our world-class academic programs designed to pave the way for your future",
+    "filters": {
+      "searchLabel": "Search Courses",
+      "searchPlaceholder": "Enter keywords to search courses",
+      "categoryLabel": "Category",
+      "allCategories": "All Categories",
+      "levelLabel": "Degree Level",
+      "allLevels": "All Levels"
+    },
+    "categories": {
+      "business": "Business Management",
+      "technology": "Technology & Innovation",
+      "healthcare": "Healthcare",
+      "environment": "Environmental Science",
+      "humanities": "Humanities & Social Sciences"
+    },
+    "levels": {
+      "bachelors": "Bachelor's Degree",
+      "masters": "Master's Degree",
+      "doctorate": "Doctoral Degree",
+      "certificate": "Professional Certificate"
+    },
+    "courseDetails": {
+      "duration": "Duration",
+      "months": "months",
+      "price": "Tuition",
+      "applyNow": "Apply Now",
+      "learnMore": "Learn More",
+      "courseHighlights": "Course Highlights",
+      "applicationDeadline": "Application Deadline",
+      "startDate": "Start Date"
+    },
+    "courses": {
+      "mba": {
+        "title": "Master of Business Administration (MBA)",
+        "description": "Our MBA program develops global business leaders through case studies, industry internships, and multicultural teamwork, providing the professional skills and strategic thinking needed for modern business management.",
+        "highlights": {
+          "1": "Strategic Management & Leadership",
+          "2": "Financial Analysis & Decision Making",
+          "3": "Global Marketing",
+          "4": "Organizational Behavior & HR",
+          "5": "Business Data Analytics & Decision Science"
+        }
+      },
+      "ai": {
+        "title": "Master of Artificial Intelligence & Data Science",
+        "description": "This program focuses on developing professionals in the fields of AI and data science. Students will learn machine learning algorithms, deep learning, natural language processing, and data analysis, preparing for thriving careers in technology.",
+        "highlights": {
+          "1": "Advanced Machine Learning",
+          "2": "Deep Learning & Neural Networks",
+          "3": "Large-Scale Data Analysis",
+          "4": "Natural Language Processing",
+          "5": "AI Ethics & Applications"
+        }
+      },
+      "health": {
+        "title": "Master of Global Health Management",
+        "description": "This program addresses global health challenges and healthcare system management, preparing students to take leadership roles in international healthcare organizations, public health agencies, and health policy making.",
+        "highlights": {
+          "1": "Global Health Policy & Systems",
+          "2": "Health Economics & Financing",
+          "3": "Epidemiology & Public Health",
+          "4": "Healthcare Innovation & Technology",
+          "5": "Cross-Cultural Healthcare Management"
+        }
+      },
+      "finance": {
+        "title": "Master of International Finance",
+        "description": "This program develops financial experts with specialized knowledge of global financial markets, covering investment management, risk analysis, corporate finance, and financial technology, preparing for international finance careers.",
+        "highlights": {
+          "1": "Global Financial Markets & Institutions",
+          "2": "Portfolio Management",
+          "3": "Financial Risk Management",
+          "4": "FinTech & Innovation",
+          "5": "Corporate Valuation & M&A"
+        }
+      },
+      "environment": {
+        "title": "Master of Sustainable Development & Environmental Management",
+        "description": "This program addresses global challenges in environmental protection and sustainable development, developing students' expertise in climate change, resource management, and environmental policy to contribute to a more sustainable future.",
+        "highlights": {
+          "1": "Climate Change Science & Policy",
+          "2": "Sustainable Resource Management",
+          "3": "Environmental Impact Assessment",
+          "4": "Green Economy & Innovation",
+          "5": "Biodiversity Conservation"
+        }
+      },
+      "culture": {
+        "title": "Cross-Cultural Communication & Global Citizenship",
+        "description": "This program develops talents with global vision and cross-cultural communication skills. Students learn about different cultural traditions, language learning methods, international relations, and social changes in the context of globalization, preparing to become true global citizens.",
+        "highlights": {
+          "1": "Cross-Cultural Communication",
+          "2": "Linguistics & Multilingual Learning",
+          "3": "Globalization & Social Change",
+          "4": "International Relations",
+          "5": "Cultural Anthropology"
+        }
+      }
+    }
+  },
+  "language": {
+    "zh": "中文",
+    "en": "English"
+  },
+  "verifyCertificatePage": {
+    "title": "Verify Certificate",
+    "subtitle": "Verify the authenticity of your certificate using the certificate ID",
+    "form": {
+      "instructionText": "Enter the certificate ID and click the verify button to view certificate details",
+      "certificateIdLabel": "Certificate ID",
+      "certificateIdPlaceholder": "Enter certificate ID (e.g., CERT-1234)",
+      "verifyButton": "Verify Certificate",
+      "verifyingButton": "Verifying..."
+    },
+    "results": {
+      "valid": "This certificate is valid and has been verified",
+      "invalid": "This certificate could not be verified. Please check the certificate ID and try again.",
+      "emptyIdError": "Please enter a valid certificate ID",
+      "certificateDetails": "Certificate Details",
+      "certificateId": "Certificate ID",
+      "name": "Recipient Name",
+      "course": "Course/Program",
+      "issueDate": "Issue Date",
+      "expiryDate": "Expiry Date",
+      "status": "Status"
+    }
+  }
+}

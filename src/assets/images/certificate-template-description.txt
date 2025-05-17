@@ -1,0 +1,47 @@
+Stratford International University (SIU) - 证书模板设计描述
+
+1. 整体布局:
+   - 横向A4纸张 (297mm x 210mm)
+   - 优雅的边框设计，使用深蓝色(#003087)和金色(#D4A017)
+   - 白色背景与轻微的金色图案水印
+   - 左上角为SIU校徽
+
+2. 标题与机构:
+   - 顶部居中大标题: "CERTIFICATE" 或 "DIPLOMA"（根据证书类型）
+   - 下方小标题: 证书类型（例如"Bachelor of Science in Business Administration"）
+   - "Stratford International University"机构名称，使用优雅的字体
+
+3. 核心内容:
+   - "This is to certify that"介绍语
+   - 学生姓名空白处（将用明显的字体和字号填入）
+   - "has successfully completed the requirements for"过渡语
+   - 学位/课程名称空白处
+   - 日期空白处
+
+4. 签名与认证:
+   - 左下角：大学注册主任签名
+   - 右下角：大学校长签名
+   - 中下部：官方金色压印校徽
+
+5. 验证信息:
+   - 证书编号格式: SIU-[类型首字母]-[年份]-[6位数字]
+   - 小字提示: "Verify this certificate at: verify.stratford-iu.edu/[证书编号]"
+   - QR码，链接到验证页面
+
+6. 安全特性:
+   - 微细字体的重复水印（"SIU Authentic"文字）
+   - 特殊的全息安全标签
+   - 不可复制的细微纹理背景
+
+7. 设计风格:
+   - 古典而专业的设计
+   - 使用衬线字体传达权威感
+   - 适度使用黄金分割比例
+   - 精心排版确保视觉平衡
+
+8. 使用的颜色:
+   - 主色: 深蓝色 (#003087)
+   - 辅助色: 金色 (#D4A017)
+   - 文字: 黑色 (#000000)
+   - 背景: 白色 (#FFFFFF)
+   - 细节: 浅灰色 (#F5F5F5) 
