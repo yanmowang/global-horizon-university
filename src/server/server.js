@@ -151,6 +151,7 @@ const startServer = async () => {
     console.log(`服务器运行在端口 ${PORT}`);
   });
 };
+};
 
 // 仅在直接运行时启动服务器
 if (require.main === module) {
