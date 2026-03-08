@@ -1,0 +1,467 @@
+{
+  "header": {
+    "home": "首页",
+    "courses": "课程",
+    "certificates": "证书",
+    "verifyCertificate": "验证证书",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "login": "登录",
+    "register": "注册",
+    "universityChinese": "斯特拉福德国际大学",
+    "dashboard": "个人中心",
+    "logout": "退出登录",
+    "account": "我的账户",
+    "adminPanel": "管理后台"
+  },
+  "footer": {
+    "about": "关于我们",
+    "courses": "课程",
+    "contact": "联系我们",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "copyright": "版权所有",
+    "allRightsReserved": "保留所有权利"
+  },
+  "homePage": {
+    "hero": {
+      "title": "培养明日领袖的全球教育",
+      "subtitle": "通过我们的世界级课程和国际认可的证书释放您的潜力",
+      "explore": "探索课程",
+      "imageAlt": "校园景色",
+      "tagline": "全球认可的在线教育"
+    },
+    "stats": {
+      "graduationRate": "毕业生就业率",
+      "companies": "合作企业",
+      "countries": "国家学生",
+      "experience": "教育经验"
+    },
+    "featuredCourses": {
+      "business": {
+        "title": "商业管理学士",
+        "description": "培养全球商业领导能力的综合课程"
+      },
+      "dataScience": {
+        "title": "数据科学与人工智能硕士",
+        "description": "掌握前沿技术，引领数字化转型"
+      },
+      "international": {
+        "title": "国际关系博士",
+        "description": "深入研究全球政治经济与外交政策"
+      }
+    },
+    "courseLevels": {
+      "undergraduate": "本科",
+      "graduate": "研究生",
+      "doctorate": "博士"
+    },
+    "duration": {
+      "years": "{{count}}年",
+      "range": "{{min}}-{{max}}年"
+    },
+    "testimonials": {
+      "title": "学生见证",
+      "subtitle": "听听我们全球学生社区的声音",
+      "student1": {
+        "name": "张明",
+        "role": "2022届商业管理学士",
+        "content": "在SIU的学习经历彻底改变了我的职业轨迹。课程内容与行业实践紧密结合，教授们都拥有丰富的实战经验。毕业后，我立即获得了一家国际企业的工作机会。"
+      },
+      "student2": {
+        "name": "李婷",
+        "role": "2021届数据科学硕士",
+        "content": "作为一名国际学生，我在SIU感受到了无与伦比的支持和包容。灵活的学习方式让我能够兼顾家庭和学业，同时结交了来自世界各地的朋友。"
+      }
+    },
+    "features": {
+      "title": "为何选择我们",
+      "subtitle": "探索加入我们全球学习社区的优势",
+      "description": "我们提供世界一流的教育资源，帮助您在全球就业市场中脱颖而出",
+      "globalRecognition": {
+        "title": "全球认可",
+        "description": "我们的证书受到全球雇主和机构的认可"
+      },
+      "flexibleLearning": {
+        "title": "灵活学习",
+        "description": "通过我们的自适应学习平台按照自己的节奏学习"
+      },
+      "expertFaculty": {
+        "title": "专家教师",
+        "description": "向杰出的教授和行业专业人士学习"
+      },
+      "careerSupport": {
+        "title": "职业支持",
+        "description": "获得职业服务和全球就业网络"
+      }
+    },
+    "programs": {
+      "title": "特色课程",
+      "subtitle": "探索我们最受欢迎的学术课程",
+      "viewAll": "查看所有课程"
+    },
+    "cta": {
+      "title": "准备好开始您的学习之旅了吗？",
+      "subtitle": "立即注册，开启您职业生涯的新篇章。",
+      "register": "立即注册",
+      "contactUs": "联系我们",
+      "applyNow": "立即申请",
+      "action": "现在就行动"
+    }
+  },
+  "certificatesPage": {
+    "title": "证书墙",
+    "subtitle": "浏览我们毕业生获得的全球认可证书，每一份证书都代表了卓越的学术成就。",
+    "searchPlaceholder": "搜索证书 (姓名, 课程名称, 证书ID)",
+    "noResultsTitle": "未找到匹配的证书",
+    "noResultsText": "请尝试其他搜索关键词",
+    "download": "下载",
+    "downloading": "下载中...",
+    "verifySection": {
+      "title": "验证您的证书",
+      "description": "通过我们的在线证书验证系统，确认证书的真实性和有效性。每个证书都有唯一的识别码和区块链记录。",
+      "action": "立即验证"
+    },
+    "certificateModal": {
+      "studentInfo": "学生信息",
+      "certificateDetails": "证书详情",
+      "name": "姓名",
+      "course": "课程",
+      "issueDate": "颁发日期",
+      "certificateId": "证书ID",
+      "download": "下载证书",
+      "verify": "验证证书",
+      "close": "关闭"
+    },
+    "ariaLabel": "查看{name}的{course}证书"
+  },
+  "login": {
+    "title": "登录您的账户",
+    "orRegister": "或",
+    "registerLink": "注册新账户",
+    "emailLabel": "电子邮箱",
+    "emailPlaceholder": "请输入您的邮箱",
+    "passwordLabel": "密码",
+    "passwordPlaceholder": "请输入您的密码",
+    "rememberMe": "记住我",
+    "forgotPassword": "忘记密码?",
+    "signIn": "登录",
+    "signingIn": "登录中...",
+    "errors": {
+      "emailRequired": "请输入电子邮箱",
+      "emailInvalid": "请输入有效的电子邮箱地址",
+      "passwordRequired": "请输入密码",
+      "invalidCredentials": "邮箱或密码无效",
+      "loginFailed": "登录失败，请稍后再试"
+    }
+  },
+  "register": {
+    "title": "注册新账户",
+    "alreadyHaveAccount": "已有账户？",
+    "loginLink": "登录",
+    "nameLabel": "姓名",
+    "namePlaceholder": "请输入您的姓名",
+    "emailLabel": "电子邮箱",
+    "emailPlaceholder": "请输入您的邮箱",
+    "passwordLabel": "密码",
+    "passwordPlaceholder": "请创建密码（至少8个字符）",
+    "confirmPasswordLabel": "确认密码",
+    "confirmPasswordPlaceholder": "请再次输入密码",
+    "agreeTerms": "我同意",
+    "termsLink": "服务条款",
+    "privacyLink": "隐私政策",
+    "and": "和",
+    "register": "注册",
+    "registering": "注册中...",
+    "success": "注册成功！请登录继续。",
+    "errors": {
+      "nameRequired": "请输入姓名",
+      "emailRequired": "请输入电子邮箱",
+      "emailInvalid": "请输入有效的电子邮箱地址",
+      "emailTaken": "该邮箱已被使用",
+      "passwordRequired": "请输入密码",
+      "passwordTooShort": "密码长度至少为8个字符",
+      "passwordMismatch": "两次输入的密码不匹配",
+      "termsRequired": "您必须同意服务条款",
+      "registerFailed": "注册失败，请稍后再试"
+    }
+  },
+  "aboutPage": {
+    "title": "关于 Stratford International University",
+    "subtitle": "启迪心灵，塑造未来。我们是一所致力于提供高质量全球化教育的知名学府。",
+    "mission": {
+      "label": "我们的使命",
+      "title": "培养具有全球视野的未来领导者",
+      "description1": "Stratford International University 成立于1995年，在过去的近三十年中，我们始终致力于提供卓越的教育体验，培养学生的全球视野和专业技能，为他们在全球舞台上的成功做好准备。",
+      "description2": "作为一所国际化大学，我们与全球多个国家和地区的顶尖学府建立了紧密的合作关系，为学生提供广泛的学习机会和丰富的文化体验。我们的课程由行业专家和学术领袖设计和教授，确保最高质量的教育标准。"
+    },
+    "exploreCourses": "探索我们的课程",
+    "campusImageAlt": "斯特拉福校园",
+    "advantages": {
+      "label": "我们的优势",
+      "title": "为什么选择 Stratford International University",
+      "subtitle": "我们提供多方面的优势，确保学生获得最佳的学习体验和职业发展机会。",
+      "globalRecognition": {
+        "title": "全球认可",
+        "description": "我们的证书和学位获得全球多个国家和地区的认可，为您的未来职业生涯提供无限可能。无论您在世界任何地方，我们的学历都将为您开启成功之门。"
+      },
+      "excellence": {
+        "title": "卓越教育",
+        "description": "我们的课程由行业专家和学术领袖设计和教授，结合实践经验和理论知识，确保您获得最高质量的教育体验和实用的专业技能。"
+      },
+      "network": {
+        "title": "全球网络",
+        "description": "加入我们遍布全球的校友网络，与来自不同国家和行业的专业人士建立联系，拓展您的职业机会和人脉关系。"
+      },
+      "security": {
+        "title": "安全认证",
+        "description": "我们的证书采用区块链技术，确保其真实性和安全性，可随时在线验证，为您的学历提供可靠的保障。"
+      },
+      "campus": {
+        "title": "现代校园",
+        "description": "我们的校园配备先进的教学设施和技术，为学生提供舒适、现代化的学习环境，支持各种学术活动和研究项目。"
+      },
+      "support": {
+        "title": "个性化支持",
+        "description": "我们提供全面的学生支持服务，包括学术指导、职业规划和个人发展，确保每位学生都能充分发挥潜力并实现自己的目标。"
+      }
+    },
+    "history": {
+      "label": "我们的历史",
+      "title": "开创全球教育的卓越之路",
+      "subtitle": "回顾我们从1995年至今的发展历程，见证我们不断追求卓越的教育品质。",
+      "foundingYear": "成立年份",
+      "partners": "国际合作伙伴",
+      "alumni": "毕业校友",
+      "phase1": {
+        "title": "创立阶段 (1995-2000)",
+        "description": "斯特拉福国际大学成立于1995年，最初只提供少量商业和管理课程。在创始人的远见领导下，学校迅速建立了良好的学术声誉。"
+      },
+      "phase2": {
+        "title": "发展壮大 (2001-2010)",
+        "description": "这一时期，学校大幅扩展课程种类，增加了技术、健康和人文科学领域的专业。同时建立了第一批国际合作伙伴关系，迈出了全球化的第一步。"
+      },
+      "phase3": {
+        "title": "全球拓展 (2011-2020)",
+        "description": "这十年间，我们在多个国家建立了分校区和学习中心，大大增强了国际影响力。我们的毕业生开始在全球各地的领先机构和企业中担任重要职位。"
+      },
+      "phase4": {
+        "title": "数字化创新 (2021-至今)",
+        "description": "近年来，我们大力投资教育技术和数字创新，推出了在线学习平台，并将区块链技术应用于证书验证系统。我们正在与全球领先企业合作，为学生提供更多实用的学习机会。"
+      }
+    },
+    "contact": {
+      "title": "想了解更多关于我们的信息？",
+      "subtitle": "无论您是想申请我们的课程，还是对我们的大学有任何疑问，我们的团队随时为您提供帮助。请通过以下方式联系我们，我们将尽快回复。",
+      "contactUs": "联系我们",
+      "faq": "常见问题",
+      "imageAlt": "联系我们"
+    }
+  },
+  "contactPage": {
+    "title": "联系我们",
+    "subtitle": "无论您有任何问题或需要帮助，我们的团队随时为您提供支持。",
+    "contactInfo": {
+      "title": "联系方式",
+      "address": {
+        "title": "地址",
+        "value": "123 University Ave, London, UK"
+      },
+      "phone": {
+        "title": "电话",
+        "value": "+1 (888) 123-4567"
+      },
+      "email": {
+        "title": "电子邮件",
+        "value": "info@stratford.edu"
+      },
+      "hours": {
+        "title": "工作时间",
+        "weekdays": "周一至周五: 9:00 - 17:00",
+        "saturday": "周六: 10:00 - 15:00",
+        "sunday": "周日: 休息"
+      },
+      "social": {
+        "title": "关注我们"
+      }
+    },
+    "form": {
+      "title": "发送消息",
+      "name": "姓名",
+      "email": "电子邮件",
+      "phone": "电话",
+      "subject": "主题",
+      "message": "消息内容",
+      "submit": "发送消息",
+      "successMessage": "您的消息已成功提交，我们会尽快与您联系。",
+      "subjectPlaceholder": "请选择",
+      "subjectOptions": {
+        "general": "一般咨询",
+        "admission": "入学申请",
+        "course": "课程咨询",
+        "certificate": "证书验证",
+        "other": "其他"
+      }
+    },
+    "map": {
+      "title": "Stratford International University 位置"
+    }
+  },
+  "coursesPage": {
+    "title": "我们的课程",
+    "subtitle": "探索我们提供的世界级学术课程，为您的未来铺平道路",
+    "filters": {
+      "searchLabel": "搜索课程",
+      "searchPlaceholder": "输入关键词搜索课程",
+      "categoryLabel": "课程分类",
+      "allCategories": "所有分类",
+      "levelLabel": "学位级别",
+      "allLevels": "所有级别"
+    },
+    "categories": {
+      "business": "商业管理",
+      "technology": "科技与创新",
+      "healthcare": "医疗健康",
+      "environment": "环境科学",
+      "humanities": "人文社科"
+    },
+    "levels": {
+      "bachelors": "本科学位",
+      "masters": "硕士学位",
+      "doctorate": "博士学位",
+      "certificate": "专业证书"
+    },
+    "courseDetails": {
+      "duration": "学制",
+      "months": "个月",
+      "price": "学费",
+      "applyNow": "立即申请",
+      "learnMore": "了解更多",
+      "courseHighlights": "课程亮点",
+      "applicationDeadline": "申请截止日期",
+      "startDate": "开学日期"
+    },
+    "courses": {
+      "mba": {
+        "title": "工商管理硕士 (MBA)",
+        "description": "我们的MBA项目培养具有全球视野的商业领袖，通过实践案例学习、行业实习和跨文化团队合作，掌握现代商业管理所需的专业技能和战略思维。",
+        "highlights": {
+          "1": "战略管理与领导力",
+          "2": "财务分析与决策",
+          "3": "全球市场营销",
+          "4": "组织行为与人力资源",
+          "5": "商业数据分析与决策科学"
+        }
+      },
+      "ai": {
+        "title": "人工智能与数据科学硕士",
+        "description": "本课程专注于培养人工智能和数据科学领域的专业人才，学生将学习机器学习算法、深度学习、自然语言处理和数据分析，为科技行业的蓬勃发展做好准备。",
+        "highlights": {
+          "1": "高级机器学习",
+          "2": "深度学习与神经网络",
+          "3": "大规模数据分析",
+          "4": "自然语言处理",
+          "5": "人工智能伦理与应用"
+        }
+      },
+      "health": {
+        "title": "全球健康管理硕士",
+        "description": "该课程关注全球健康挑战和医疗系统管理，培养学生在国际医疗组织、公共卫生机构和健康政策制定中发挥领导作用的能力。",
+        "highlights": {
+          "1": "全球卫生政策与系统",
+          "2": "健康经济学与融资",
+          "3": "流行病学与公共卫生",
+          "4": "医疗创新与技术",
+          "5": "跨文化健康服务管理"
+        }
+      },
+      "finance": {
+        "title": "国际金融硕士",
+        "description": "本课程培养具备全球金融市场专业知识的财务专家，涵盖投资管理、风险分析、公司金融和金融科技等领域，为国际金融职业生涯做好准备。",
+        "highlights": {
+          "1": "全球金融市场与机构",
+          "2": "投资组合管理",
+          "3": "财务风险管理",
+          "4": "金融科技与创新",
+          "5": "企业估值与并购"
+        }
+      },
+      "environment": {
+        "title": "可持续发展与环境管理硕士",
+        "description": "该课程关注环境保护和可持续发展的全球挑战，培养学生在气候变化、资源管理和环境政策等领域的专业知识，为建设更可持续的未来做出贡献。",
+        "highlights": {
+          "1": "气候变化科学与政策",
+          "2": "可持续资源管理",
+          "3": "环境影响评估",
+          "4": "绿色经济与创新",
+          "5": "生物多样性保护"
+        }
+      },
+      "culture": {
+        "title": "跨文化交流与全球公民",
+        "description": "本课程培养具有全球视野和跨文化交流能力的人才。学生将学习不同文化传统、语言学习方法、国际关系和全球化背景下的社会变迁，为成为真正的全球公民做好准备。",
+        "highlights": {
+          "1": "跨文化沟通",
+          "2": "语言学与多语言学习",
+          "3": "全球化与社会变迁",
+          "4": "国际关系",
+          "5": "文化人类学"
+        }
+      }
+    }
+  },
+  "language": {
+    "zh": "中文",
+    "en": "English"
+  },
+  "verifyCertificatePage": {
+    "title": "证书验证",
+    "subtitle": "请输入证书ID进行验证",
+    "form": {
+      "certificateId": "证书ID",
+      "exampleId": "示例: SIU-2023-1234",
+      "button": "验证证书",
+      "verifying": "验证中..."
+    },
+    "howItWorks": {
+      "title": "证书验证说明",
+      "description": "每个由我们机构颁发的证书都包含一个唯一的标识符，可以通过我们的安全数据库进行验证。此验证系统确保了我们机构颁发的所有证书的真实性。",
+      "step1": {
+        "title": "步骤 1: 输入证书ID",
+        "description": "在证书上找到唯一的证书ID，并在上方的验证框中输入。"
+      },
+      "step2": {
+        "title": "步骤 2: 验证证书",
+        "description": "点击'验证证书'按钮，系统将检查证书的真实性和有效性。"
+      },
+      "step3": {
+        "title": "步骤 3: 查看结果",
+        "description": "系统会显示证书的详细信息，包括获得者姓名、课程名称和颁发日期等。"
+      }
+    },
+    "results": {
+      "valid": {
+        "title": "证书有效",
+        "description": "这是一个有效的证书，已在我们的系统中验证。"
+      },
+      "invalid": {
+        "title": "证书无效",
+        "description": "我们无法验证此证书。请确认证书ID是否正确输入。"
+      },
+      "error": {
+        "title": "验证错误",
+        "description": "验证过程中出现错误，请稍后再试。"
+      },
+      "details": {
+        "title": "证书详情",
+        "recipient": "获得者",
+        "program": "课程名称",
+        "type": "证书类型",
+        "issueDate": "颁发日期",
+        "status": "状态",
+        "downloadButton": "下载证书",
+        "verificationId": "验证ID"
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="240px" viewBox="0 0 200 240" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- 盾牌外形 -->
+  <path d="M100,10 L180,40 L180,120 C180,180 100,230 100,230 C100,230 20,180 20,120 L20,40 Z" fill="#003087" stroke="#D4A017" stroke-width="3"/>
+  
+  <!-- 内部边框 -->
+  <path d="M100,20 L170,45 L170,120 C170,175 100,220 100,220 C100,220 30,175 30,120 L30,45 Z" fill="#003087" stroke="#D4A017" stroke-width="1" fill-opacity="0.9"/>
+  
+  <!-- GASB 文字 -->
+  <text x="100" y="70" fill="#D4A017" font-family="Arial, sans-serif" font-weight="bold" font-size="32" text-anchor="middle">GASB</text>
+  
+  <!-- 全称 - 分行显示 -->
+  <text x="100" y="100" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">GLOBAL ACADEMIC</text>
+  <text x="100" y="115" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">STANDARDS BOARD</text>
+  
+  <!-- 装饰图案 - 顶部书本和火炬 -->
+  <path d="M90,40 L110,40 L115,20 L105,15 L95,15 L85,20 Z" fill="#D4A017"/>
+  <path d="M95,15 L105,15 L105,10 L95,10 Z" fill="#D4A017"/>
+  <rect x="97" y="5" width="6" height="5" fill="#D4A017"/>
+  
+  <!-- 装饰图案 - 底部橄榄枝 -->
+  <path d="M70,150 C60,140 80,130 90,140 C100,150 120,150 130,140 C140,130 160,140 150,150" fill="none" stroke="#D4A017" stroke-width="2"/>
+  <path d="M70,160 C60,150 80,140 90,150 C100,160 120,160 130,150 C140,140 160,150 150,160" fill="none" stroke="#D4A017" stroke-width="2"/>
+  <path d="M70,170 C60,160 80,150 90,160 C100,170 120,170 130,160 C140,150 160,160 150,170" fill="none" stroke="#D4A017" stroke-width="2"/>
+  
+  <!-- 底部认证年份 -->
+  <text x="100" y="190" fill="#D4A017" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">EST. 2000</text>
+  
+  <!-- 装饰星星 -->
+  <path d="M60,130 L63,137 L70,138 L65,144 L66,151 L60,148 L54,151 L55,144 L50,138 L57,137 Z" fill="#D4A017"/>
+  <path d="M140,130 L143,137 L150,138 L145,144 L146,151 L140,148 L134,151 L135,144 L130,138 L137,137 Z" fill="#D4A017"/>
+</svg> 

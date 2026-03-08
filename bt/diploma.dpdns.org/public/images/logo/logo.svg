@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="100" cy="100" r="95" fill="#003087" stroke="#D4A017" stroke-width="5"/>
+  
+  <!-- 内部装饰环 -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#D4A017" stroke-width="2"/>
+  
+  <!-- 学校名称 - 上部 -->
+  <path id="textCircle" d="M100,30 a70,70 0 1,1 -0.1,0" fill="none"/>
+  <text fill="#D4A017" font-family="Arial, sans-serif" font-weight="bold" font-size="14">
+    <textPath href="#textCircle" startOffset="5%">STRATFORD INTERNATIONAL UNIVERSITY</textPath>
+  </text>
+  
+  <!-- 学校成立年份 - 下部 -->
+  <text x="100" y="175" fill="#D4A017" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">FOUNDED 2005</text>
+  
+  <!-- SIU缩写 - 中心 -->
+  <text x="100" y="85" fill="#D4A017" font-family="Times New Roman, serif" font-weight="bold" font-size="50" text-anchor="middle">SIU</text>
+  
+  <!-- 装饰图案 - 书籍和火炬 -->
+  <rect x="70" y="100" width="60" height="40" fill="#003087" stroke="#D4A017" stroke-width="2"/>
+  <path d="M100,95 L100,145" fill="none" stroke="#D4A017" stroke-width="2"/>
+  <path d="M100,95 C100,80 120,80 120,95" fill="none" stroke="#D4A017" stroke-width="2"/>
+  <path d="M100,95 C100,80 80,80 80,95" fill="none" stroke="#D4A017" stroke-width="2"/>
+  <path d="M100,90 L100,70 L105,60 L95,60 L100,70" fill="#D4A017"/>
+  <ellipse cx="100" cy="55" rx="8" ry="15" fill="#D4A017"/>
+</svg> 

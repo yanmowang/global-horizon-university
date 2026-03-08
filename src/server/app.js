@@ -1,24 +1,19 @@
 const express = require('express');
 const cors = require('cors');
-const mongoose = require('mongoose');
 const path = require('path');
-const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const cookieParser = require('cookie-parser');
 
-// Load environment variables
-dotenv.config();
-
-// Import routes
+// 导入路由
 const authRoutes = require('./routes/authRoutes');
 const certificateRoutes = require('./routes/certificateRoutes');
 const adminRoutes = require('./routes/adminRoutes');
 
-// Initialize express app
+// 初始化express应用
 const app = express();
 
-// Middleware
+// 中间件
 app.use(
   cors({
     origin: [
@@ -26,18 +21,21 @@ app.use(
       'http://127.0.0.1:3000',
       'http://localhost:3001',
       'http://127.0.0.1:3001',
+      'https://diploma.dpdns.org',  // 添加您的新域名
+      'http://diploma.dpdns.org',   // 同时添加HTTP版本
+      'https://leafy-swan-1b3792.netlify.app' // 添加Netlify默认域名
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
   })
 );
-app.use(morgan('dev')); // Logging
-app.use(bodyParser.json()); // Parse JSON bodies
-app.use(bodyParser.urlencoded({ extended: true })); // Parse URL-encoded bodies
-app.use(cookieParser()); // Parse cookies
+app.use(morgan('dev')); // 日志记录
+app.use(bodyParser.json()); // 解析JSON请求体
+app.use(bodyParser.urlencoded({ extended: true })); // 解析URL编码的请求体
+app.use(cookieParser()); // 解析cookies
 
-// Static folder
+// 静态文件夹
 app.use(
   express.static(path.join(__dirname, '../../build'), {
     maxAge: '1d', // 设置缓存时间为1天
@@ -46,7 +44,7 @@ app.use(
   })
 );
 
-// Serve certificate PDFs
+// 提供证书PDF文件
 app.use(
   '/certificates',
   express.static(path.join(__dirname, '../../public/certificates'), {
@@ -55,7 +53,7 @@ app.use(
   })
 );
 
-// Serve signature and other images
+// 提供签名和其他图片
 app.use(
   '/images',
   express.static(path.join(__dirname, '../../public/images'), {
@@ -64,52 +62,26 @@ app.use(
   })
 );
 
-// API Routes
+// API路由
 app.use('/api/auth', authRoutes);
 app.use('/api/certificates', certificateRoutes);
 app.use('/api/admin', adminRoutes);
 
-// Error handling middleware
+// 错误处理中间件
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).json({
     success: false,
-    message: 'Server Error',
+    message: '服务器错误',
     error: process.env.NODE_ENV === 'production' ? null : err.message,
   });
 });
 
-// Serve React app for any other routes
+// 提供React应用程序的任何其他路由
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../../build', 'index.html'));
 });
 
-// Connect to MongoDB
-const connectDB = async () => {
-  try {
-    await mongoose.connect(process.env.MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true,
-      useFindAndModify: false,
-    });
-    console.log('MongoDB Connected');
-  } catch (error) {
-    console.error('MongoDB connection error:', error.message);
-    process.exit(1);
-  }
-};
-
-// Run the server
-const PORT = process.env.PORT || 5000;
-
-const startServer = async () => {
-  await connectDB();
-  app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-  });
-};
-
-startServer();
-
+// 导出app对象，但不启动服务器
+// 服务器将在server.js中启动
 module.exports = app;

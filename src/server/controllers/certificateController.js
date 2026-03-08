@@ -4,6 +4,7 @@ const PDFDocument = require('pdfkit');
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const QRCode = require('qrcode');
 
 // Application directories
 const DIRS = {
@@ -68,25 +69,23 @@ setInterval(
  * @returns {Promise<string>} - Path to generated PDF
  */
 const generateCertificatePDF = async (certificateData, outputPath) => {
-  return new Promise((resolve, reject) => {
-    try {
-      // Create output directory if it doesn't exist
-      const outputDir = path.dirname(outputPath);
-      if (!fs.existsSync(outputDir)) {
-        fs.mkdirSync(outputDir, { recursive: true });
-      }
+  try {
+    // Generate verification URL
+    const verificationUrl = `${process.env.CLIENT_URL || 'http://localhost:3001'}/verify/${certificateData.certificateNumber}`;
+    
+    // Generate QR Code
+    const qrCodeDataUrl = await QRCode.toDataURL(verificationUrl, { margin: 1, width: 100 });
 
-      // 强制使用premium模板，无论用户角色
-      const templatePath = path.join(__dirname, '../../../public/templates/certificate-premium.svg');
-      let svgTemplate;
-      
+    return new Promise((resolve, reject) => {
       try {
-        svgTemplate = fs.readFileSync(templatePath, 'utf8');
-      } catch (err) {
-        console.error('Error reading SVG template:', err);
-        // Fallback to generating a template dynamically if file doesn't exist
-        svgTemplate = generatePremiumCertificateSVG();
-      }
+        // Create output directory if it doesn't exist
+        const outputDir = path.dirname(outputPath);
+        if (!fs.existsSync(outputDir)) {
+          fs.mkdirSync(outputDir, { recursive: true });
+        }
+
+        // Always use dynamic template generation to ensure consistency
+        let svgTemplate = generatePremiumCertificateSVG(qrCodeDataUrl);
 
       // Replace placeholders in the SVG template
       const recipientName = certificateData.recipientName || 'Student';
@@ -116,13 +115,14 @@ const generateCertificatePDF = async (certificateData, outputPath) => {
         .replace(/\[RECIPIENT_NAME\]/g, recipientName)
         .replace(/\[PROGRAM\]/g, program)
         .replace(/\[CERTIFICATE_NUMBER\]/g, certNumber)
-        .replace(/\[ISSUE_DATE\]/g, issueDate);
+        .replace(/\[ISSUE_DATE\]/g, issueDate)
+        .replace(/\[HONORS_LABEL\]/g, certificateData.metadata?.honors || '');
 
       // Create temporary SVG file
-      const tempSvgPath = `${outputPath}.svg`;
+      const tempSvgPath = path.join(path.dirname(outputPath), `temp_${Date.now()}.svg`);
       fs.writeFileSync(tempSvgPath, svgTemplate);
 
-      // Convert SVG to PDF using sharp or another conversion library
+      // Convert SVG to PDF using pdfkit
       const SVGtoPDF = require('svg-to-pdfkit');
       
       // Create PDF document
@@ -143,11 +143,16 @@ const generateCertificatePDF = async (certificateData, outputPath) => {
       doc.pipe(stream);
 
       // Convert SVG to PDF
-      SVGtoPDF(doc, svgTemplate, 0, 0, {
-        preserveAspectRatio: 'xMidYMid meet',
-        width: doc.page.width,
-        height: doc.page.height
-      });
+      try {
+          SVGtoPDF(doc, svgTemplate, 0, 0, {
+            preserveAspectRatio: 'xMidYMid meet',
+            width: doc.page.width,
+            height: doc.page.height
+          });
+      } catch(e) {
+         console.error("SVGtoPDF error:", e);
+         doc.text("Error generating certificate graphics. Please contact support.");
+      }
 
       // Finalize the PDF and end the stream
       doc.end();
@@ -155,7 +160,9 @@ const generateCertificatePDF = async (certificateData, outputPath) => {
       stream.on('finish', () => {
         // Clean up temporary SVG file
         try {
-          fs.unlinkSync(tempSvgPath);
+          if (fs.existsSync(tempSvgPath)) {
+            fs.unlinkSync(tempSvgPath);
+          }
         } catch (err) {
           console.warn('Could not remove temporary SVG file:', err);
         }
@@ -169,13 +176,16 @@ const generateCertificatePDF = async (certificateData, outputPath) => {
       reject(new Error(`Certificate generation failed: ${err.message}`));
     }
   });
+  } catch (err) {
+    throw new Error(`Certificate generation failed: ${err.message}`);
+  }
 };
 
 /**
  * Generate a premium certificate SVG template dynamically
  * This is a fallback if the template file is not found
  */
-function generatePremiumCertificateSVG() {
+function generatePremiumCertificateSVG(qrCodeDataUrl) {
   // 使用图片中的米色背景和金色主题
   const goldColor = '#C19A49';
   const titleColor = '#C19A49';
@@ -186,8 +196,10 @@ function generatePremiumCertificateSVG() {
   const logoPath = '/images/logo/logo.svg';
   const presidentSignPath = '/images/signatures/president.svg';
   const directorSignPath = '/images/signatures/director.svg';
-  const sealPath = '/images/logo/seal.svg';  // 印章图片
+  const sealPath = '/images/siu-logo/seal.png';  // 印章图片
   
+  const qrCodeImage = qrCodeDataUrl ? `<image x="1050" y="750" width="100" height="100" href="${qrCodeDataUrl}" />` : '';
+
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg width="1200" height="900" xmlns="http://www.w3.org/2000/svg">
   <!-- 米色背景 -->
@@ -211,8 +223,8 @@ function generatePremiumCertificateSVG() {
   <path d="M20,880 L70,880 L70,875 L25,875 L25,830 L20,830 Z" fill="${goldColor}" />
   <path d="M1180,880 L1130,880 L1130,875 L1175,875 L1175,830 L1180,830 Z" fill="${goldColor}" />
   
-  <!-- 顶部校徽 -->
-  <image x="550" y="40" width="100" height="100" href="${logoPath}" />
+  <!-- 顶部校徽 - 已移除 -->
+  <!-- <image x="550" y="40" width="100" height="100" href="${logoPath}" /> -->
   
   <!-- 学校名称 - 上移 -->
   <text x="600" y="100" font-family="Times New Roman, serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#000000">STRATFORD INTERNATIONAL UNIVERSITY</text>
@@ -236,7 +248,7 @@ function generatePremiumCertificateSVG() {
   <text x="600" y="470" font-family="Times New Roman, serif" font-size="20" text-anchor="middle" fill="${textColor}">and is awarded this Certificate of Completion with all rights, privileges, and honors appertaining thereto.</text>
   
   <!-- 荣誉标签 -->
-  <text x="600" y="520" font-family="Times New Roman, serif" font-size="22" font-style="italic" text-anchor="middle" fill="${goldColor}">Cum Honore</text>
+  <text x="600" y="520" font-family="Times New Roman, serif" font-size="22" font-style="italic" text-anchor="middle" fill="${goldColor}">[HONORS_LABEL]</text>
   
   <!-- 日期文本 - 上移 -->
   <text x="600" y="560" font-family="Times New Roman, serif" font-size="20" text-anchor="middle" fill="${textColor}">Awarded Date</text>
@@ -253,21 +265,16 @@ function generatePremiumCertificateSVG() {
   <text x="875" y="730" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="${textColor}">Prof. Dr. James Carpenter</text>
   <text x="875" y="750" font-family="Times New Roman, serif" font-size="16" text-anchor="middle" fill="${textColor}">Director, MBA Program</text>
   
-  <!-- 中央印章图像 - 移到红×位置 -->
-  <image x="565" y="620" width="70" height="70" href="${sealPath}" />
+  <!-- 底部校徽 - 替代原印章位置 -->
+  <image x="550" y="600" width="100" height="100" href="${logoPath}" />
   
-  <!-- 如果没有实际印章图像，则绘制一个圆形印章 -->
-  <g display="${sealPath ? 'none' : 'inline'}">
-    <circle cx="600" cy="655" r="35" fill="#1A4B8C" stroke="${goldColor}" stroke-width="2" />
-    <circle cx="600" cy="655" r="32" fill="#1A4B8C" stroke="${goldColor}" stroke-width="1" />
-    <circle cx="600" cy="655" r="25" fill="#1A4B8C" stroke="${goldColor}" stroke-width="1" />
-    <text x="600" y="655" font-family="Times New Roman, serif" font-size="12" font-weight="bold" text-anchor="middle" fill="${goldColor}">STRATFORD</text>
-    <text x="600" y="665" font-family="Times New Roman, serif" font-size="12" font-weight="bold" text-anchor="middle" fill="${goldColor}">UNIVERSITY</text>
-    <text x="600" y="645" font-family="Times New Roman, serif" font-size="16" font-weight="bold" text-anchor="middle" fill="${goldColor}">SIU</text>
-  </g>
+  <!-- 原印章代码已移除 -->
   
   <!-- 证书编号 - 放在底部中央 -->
   <text x="600" y="830" font-family="Times New Roman, serif" font-size="12" text-anchor="middle" fill="${textColor}">Certificate ID: [CERTIFICATE_NUMBER]</text>
+
+  <!-- 二维码 -->
+  ${qrCodeImage}
 </svg>`;
 }
 
@@ -345,7 +352,7 @@ exports.getCertificate = async (req, res) => {
  */
 exports.createCertificateRequest = async (req, res) => {
   try {
-    const { program, certificateType, metadata } = req.body;
+    const { program, certificateType, metadata, certificateNumber } = req.body;
 
     if (!program || !certificateType) {
       return res.status(400).json({
@@ -358,7 +365,8 @@ exports.createCertificateRequest = async (req, res) => {
       userId: req.user.id,
       program,
       certificateType,
-      status: 'pending',
+      certificateNumber, // Allow manual certificate number for testing
+      status: 'issued', // Auto-issue certificates by default
       metadata: metadata || {},
     });
 
@@ -370,10 +378,11 @@ exports.createCertificateRequest = async (req, res) => {
       data: certificate,
     });
   } catch (error) {
+    console.error('Create certificate error:', error);
     res.status(500).json({
       success: false,
       message: 'Failed to create certificate request',
-      error: process.env.NODE_ENV === 'production' ? null : error.message,
+      error: error.message,
     });
   }
 };

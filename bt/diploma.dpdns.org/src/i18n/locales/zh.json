@@ -1,0 +1,402 @@
+{
+  "certificatesPage": {
+    "title": "证书墙",
+    "subtitle": "浏览我们全球学员的优秀学术成就",
+    "searchPlaceholder": "搜索姓名、课程或证书编号",
+    "noResultsTitle": "未找到匹配的证书",
+    "noResultsText": "请尝试使用不同的搜索条件，或清除搜索重新显示所有证书。",
+    "download": "下载证书",
+    "downloading": "正在下载...",
+    "downloadingMessage": "正在准备证书...",
+    "downloadSuccess": "下载成功！",
+    "downloadError": "下载失败，请重试",
+    "ariaLabel": "查看{{name}}的{{course}}证书",
+    "verifySection": {
+      "title": "验证证书真实性",
+      "description": "通过输入证书编号验证证书的真实性和有效性，确保学术成就得到官方认可。",
+      "action": "验证证书"
+    },
+    "certificateModal": {
+      "studentInfo": "学生信息",
+      "name": "姓名",
+      "certificateDetails": "证书详情",
+      "course": "课程",
+      "description": "课程描述",
+      "issueDate": "颁发日期",
+      "certificateId": "证书编号",
+      "download": "下载证书",
+      "verify": "验证真实性",
+      "close": "关闭",
+      "verifiedText": "本证书已通过区块链技术认证，防伪编码可通过官网验证系统查询。"
+    },
+    "noCertificates": "没有可用证书",
+    "noCertificatesMessage": "目前没有可供显示的证书。"
+  },
+  "certificateWall": {
+    "title": "证书墙",
+    "subtitle": "庆祝来自世界各地的学术成就",
+    "statsTitle": "证书统计",
+    "totalCertificates": "证书总数",
+    "countriesRepresented": "覆盖国家",
+    "averageSatisfaction": "平均满意度",
+    "topProgram": "热门课程",
+    "searchPlaceholder": "搜索证书...",
+    "allPrograms": "所有项目",
+    "verifyTitle": "验证证书",
+    "verifyPlaceholder": "输入证书编号 (例如: GHU-BA-2023-123456)",
+    "verify": "验证证书",
+    "verifying": "正在验证...",
+    "validCertificate": "证书验证成功",
+    "notFound": "未找到证书，请检查证书编号后重试。",
+    "recipient": "获得者",
+    "program": "项目",
+    "issueDate": "颁发日期",
+    "country": "国家/地区",
+    "achievements": "成就",
+    "viewCertificate": "查看证书",
+    "recentCertificates": "最近颁发的证书",
+    "noResults": "没有找到符合您搜索条件的证书。",
+    "officialCertificate": "官方证书",
+    "certifies": "兹证明",
+    "hasCompleted": "已成功完成",
+    "issuedOn": "颁发于",
+    "presidentSignature": "校长",
+    "deanSignature": "项目主任",
+    "verifyAt": "可在verify.stratford-university.edu验证此证书",
+    "close": "关闭"
+  },
+  "verifyCertificatePage": {
+    "title": "验证您的证书",
+    "subtitle": "通过我们的在线证书验证系统，确认证书的真实性和有效性。每个证书都有唯一一的识别码和区块链记录。",
+    "form": {
+      "certificateIdLabel": "证书编号",
+      "certificateIdPlaceholder": "请输入证书编号 (例如: CERT-1234)",
+      "verifyButton": "立即验证",
+      "verifyingButton": "正在验证...",
+      "instructionText": "请输入证书ID并点击验证按钮查看证书详情"
+    },
+    "results": {
+      "valid": "证书验证成功",
+      "invalid": "证书验证失败",
+      "certificateDetails": "证书详情",
+      "certificateId": "证书编号",
+      "name": "持证人姓名",
+      "course": "课程名称",
+      "issueDate": "颁发日期",
+      "expiryDate": "有效期至",
+      "status": "状态"
+    }
+  },
+  "aboutPage": {
+    "title": "关于我们",
+    "subtitle": "了解我们的大学、使命和价值观",
+    "mission": {
+      "label": "我们的使命",
+      "title": "通过高质量教育改变生活",
+      "description1": "斯特拉福国际大学致力于提供易于获取的高质量教育，培养学生在全球经济中取得成功的能力。",
+      "description2": "我们努力创造一个促进创新、批判性思维和实用技能发展的学习环境，通过前沿课程和专业教师提供优质教育。"
+    },
+    "exploreCourses": "探索我们的课程",
+    "campusImageAlt": "大学校园",
+    "advantages": {
+      "label": "为什么选择我们",
+      "title": "我们的优势",
+      "subtitle": "是什么让斯特拉福国际大学与众不同",
+      "globalRecognition": {
+        "title": "全球认可",
+        "description": "我们的学位和证书受到全球雇主和教育机构的认可"
+      },
+      "excellence": {
+        "title": "学术卓越",
+        "description": "由行业专家开发的严格课程，注重实用知识和技能"
+      },
+      "network": {
+        "title": "全球网络",
+        "description": "与来自世界各地的学生、校友和专业人士建立联系"
+      },
+      "security": {
+        "title": "区块链凭证",
+        "description": "使用先进的区块链技术提供安全、可验证的数字凭证"
+      }
+    }
+  },
+  "header": {
+    "home": "首页",
+    "courses": "课程",
+    "certificates": "证书",
+    "verifyCertificate": "验证证书",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "login": "登录",
+    "register": "注册",
+    "dashboard": "个人中心",
+    "adminPanel": "管理后台",
+    "logout": "退出",
+    "universityChinese": "斯特拉福国际大学"
+  },
+  "login": {
+    "title": "登录您的账户",
+    "orRegister": "还没有账户?",
+    "registerLink": "立即注册",
+    "emailLabel": "电子邮箱",
+    "emailPlaceholder": "请输入您的电子邮箱",
+    "passwordLabel": "密码",
+    "passwordPlaceholder": "请输入您的密码",
+    "rememberMe": "记住我",
+    "forgotPassword": "忘记密码?",
+    "signIn": "登录",
+    "signingIn": "登录中...",
+    "errors": {
+      "emailRequired": "请输入电子邮箱",
+      "emailInvalid": "请输入有效的电子邮箱",
+      "passwordRequired": "请输入密码",
+      "invalidCredentials": "邮箱或密码不正确",
+      "loginFailed": "登录失败，请稍后再试",
+      "serverError": "服务器错误，请稍后再试",
+      "serverOffline": "服务器连接失败，请检查您的连接或稍后再试"
+    }
+  },
+  "register": {
+    "title": "创建新账户",
+    "alreadyHaveAccount": "已有账户?",
+    "loginLink": "立即登录",
+    "nameLabel": "姓名",
+    "namePlaceholder": "请输入您的姓名",
+    "emailLabel": "电子邮箱",
+    "emailPlaceholder": "请输入您的电子邮箱",
+    "passwordLabel": "密码",
+    "passwordPlaceholder": "请设置您的密码",
+    "confirmPasswordLabel": "确认密码",
+    "confirmPasswordPlaceholder": "请再次输入密码",
+    "agreeTerms": "我同意",
+    "termsLink": "服务条款和隐私政策",
+    "createAccount": "创建账户",
+    "creatingAccount": "创建中...",
+    "success": "注册成功，请登录",
+    "errors": {
+      "nameRequired": "请输入姓名",
+      "emailRequired": "请输入电子邮箱",
+      "emailInvalid": "请输入有效的电子邮箱",
+      "emailTaken": "该电子邮箱已被注册",
+      "passwordRequired": "请设置密码",
+      "passwordTooShort": "密码长度至少为8个字符",
+      "passwordMismatch": "两次输入的密码不一致",
+      "termsRequired": "请阅读并同意服务条款",
+      "registerFailed": "注册失败，请稍后再试"
+    }
+  },
+  "language": {
+    "zh": "中文",
+    "en": "English"
+  },
+  "homePage": {
+    "hero": {
+      "title": "全球认可的在线高等教育",
+      "subtitle": "为您提供灵活学习方式和国际认可的学术证书",
+      "explore": "探索课程"
+    },
+    "features": {
+      "title": "我们的优势",
+      "subtitle": "为什么选择斯特拉福国际大学",
+      "description": "我们提供创新的学习体验，结合了高质量的学术内容和实用的职业技能发展",
+      "globalRecognition": {
+        "title": "全球认可",
+        "description": "我们的学位证书受到全球企业和教育机构的认可"
+      },
+      "flexibleLearning": {
+        "title": "灵活学习",
+        "description": "根据您的时间和节奏在线完成课程"
+      },
+      "expertFaculty": {
+        "title": "专业师资",
+        "description": "来自各行业的专家提供实践性教学"
+      },
+      "careerSupport": {
+        "title": "职业支持",
+        "description": "全方位的职业指导和就业服务帮助您实现职业目标"
+      }
+    },
+    "programs": {
+      "title": "学术项目",
+      "subtitle": "选择适合您职业目标的专业课程，开启您的学术旅程",
+      "viewAll": "查看全部课程"
+    },
+    "testimonials": {
+      "title": "学生反馈",
+      "subtitle": "了解我们的毕业生如何在全球职场中取得成功"
+    },
+    "cta": {
+      "title": "开启您的学习旅程",
+      "subtitle": "立即申请我们的课程，开启您的职业发展新篇章",
+      "applyNow": "立即申请",
+      "contactUs": "联系我们"
+    },
+    "stats": {
+      "graduationRate": "毕业生就业率",
+      "companies": "合作企业",
+      "countries": "国家学生",
+      "experience": "教育经验"
+    }
+  },
+  "footer": {
+    "about": "关于斯特拉福国际大学",
+    "terms": "服务条款",
+    "privacy": "隐私政策",
+    "allRightsReserved": "版权所有"
+  },
+  "dashboard": {
+    "welcome": "欢迎回来，{{user}}！",
+    "overview": "这里是您的证书和最近活动概览。",
+    "tabs": {
+      "dashboard": "控制台",
+      "generateCertificate": "生成SIU证书",
+      "certificateDetails": "证书详情"
+    },
+    "loadingMessage": "正在加载您的控制台...",
+    "failedTitle": "加载控制台失败",
+    "statistics": {
+      "totalCertificates": "证书总数",
+      "pendingApproval": "待审核",
+      "issuedCertificates": "已颁发证书",
+      "revokedCertificates": "已撤销证书"
+    },
+    "actions": {
+      "viewAll": "查看全部",
+      "viewPending": "查看待审核",
+      "viewIssued": "查看已颁发",
+      "viewRevoked": "查看已撤销"
+    },
+    "quickActions": {
+      "title": "快速操作",
+      "requestCertificate": {
+        "title": "申请证书",
+        "description": "申请新的证书或资格认证。",
+        "action": "立即申请"
+      },
+      "updateProfile": {
+        "title": "更新个人资料",
+        "description": "更新您的个人信息和安全设置。",
+        "action": "查看个人资料"
+      },
+      "browseCertificates": {
+        "title": "浏览证书",
+        "description": "查看和管理您的所有证书。",
+        "action": "查看全部"
+      }
+    },
+    "recentCertificates": {
+      "title": "最近的证书",
+      "description": "您最近申请或更新的证书。",
+      "noCertificates": {
+        "title": "未找到证书",
+        "description": "从申请您的第一个证书开始。",
+        "action": "申请证书"
+      }
+    }
+  },
+  "certificates": {
+    "title": "证书",
+    "allCertificates": "全部证书",
+    "unknown": "未知证书",
+    "unspecifiedCourse": "未指定课程",
+    "unspecifiedRecipient": "未指定接收者",
+    "unspecifiedDate": "未指定日期",
+    "noAssignedNumber": "未分配编号",
+    "notGenerated": "尚未生成",
+    "noIdCannotVerify": "证书编号未分配，无法验证",
+    "viewAndManage": "查看和管理您的所有证书",
+    "showingStatus": "显示所有{{status}}证书",
+    "noCertificatesFound": "未找到证书",
+    "noStatusFound": "未找到{{status}}证书",
+    "loadingCertificates": "正在加载证书...",
+    "loadingCertificate": "正在加载证书详情...",
+    "requestNew": "申请新证书",
+    "filters": {
+      "all": "全部",
+      "pending": "待审核",
+      "issued": "已颁发",
+      "revoked": "已撤销"
+    },
+    "status": {
+      "pending": "待审核",
+      "issued": "已颁发",
+      "revoked": "已撤销"
+    },
+    "details": {
+      "title": "证书详情",
+      "subtitle": "关于您证书的详细信息。",
+      "downloadPDF": "下载PDF证书",
+      "certificateNumber": "证书编号",
+      "course": "课程/学位",
+      "recipientName": "接收者姓名",
+      "issueDate": "发布日期",
+      "status": "状态",
+      "blockchainHash": "区块链哈希",
+      "verificationLink": "验证链接",
+      "verify": "验证此证书"
+    },
+    "certificateViewer": {
+      "title": "证书查看器",
+      "close": "关闭"
+    }
+  },
+  "certificate": {
+    "universityName": "斯特拉福国际大学",
+    "completionTitle": "结业证书",
+    "certifiesText": "斯特拉福国际大学特此证明",
+    "requirementsText": "已完成学位课程要求",
+    "rightsText": "并授予此结业证书，附带所有相应的权利、特权和荣誉。",
+    "honors": "优等结业",
+    "awardedDate": "授予日期",
+    "presidentTitle": "Prof. Dr. Linda Foster\n大学校长",
+    "directorTitle": "Prof. Dr. James Carpenter\n课程主任，MBA项目",
+    "idLabel": "证书编号",
+    "generic": "证书",
+    "pdfError": "生成PDF时出错，请稍后再试"
+  },
+  "unauthorized": {
+    "title": "访问被拒绝",
+    "message": "您没有权限访问此页面。如需访问，请联系系统管理员或使用具有适当权限的账号登录。",
+    "goHome": "返回首页",
+    "login": "重新登录"
+  },
+  "admin": {
+    "dashboard": "管理仪表盘",
+    "certificates": "证书管理",
+    "users": "用户管理",
+    "settings": "系统设置",
+    "overview": "概览",
+    "payments": "支付管理",
+    "stats": {
+      "totalCertificates": "证书总数",
+      "totalUsers": "用户总数",
+      "recentCertificates": "最近证书",
+      "revenue": "收入",
+      "verificationRate": "验证率"
+    },
+    "certificatesList": {
+      "id": "ID",
+      "name": "姓名",
+      "program": "项目",
+      "date": "日期",
+      "status": "状态",
+      "actions": "操作",
+      "view": "查看",
+      "edit": "编辑",
+      "delete": "删除",
+      "approve": "批准",
+      "reject": "拒绝",
+      "revoke": "撤销"
+    },
+    "usersList": {
+      "id": "ID",
+      "name": "姓名",
+      "email": "邮箱",
+      "role": "角色",
+      "joined": "注册日期",
+      "lastLogin": "最后登录",
+      "actions": "操作",
+      "status": "状态"
+    }
+  }
+}

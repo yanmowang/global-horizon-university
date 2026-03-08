@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200px" height="600px" viewBox="0 0 1200 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景天空 -->
+  <rect width="1200" height="600" fill="#E8F4FE"/>
+  
+  <!-- 远处的山脉/建筑 -->
+  <polygon points="0,300 100,280 200,290 300,270 400,290 500,260 600,280 700,250 800,270 900,250 1000,280 1100,240 1200,270 1200,600 0,600" fill="#D9E7F5"/>
+  
+  <!-- 主校园建筑 - 古典风格 -->
+  <rect x="300" y="200" width="600" height="250" fill="#E6D7B8"/>
+  
+  <!-- 建筑细节 - 窗户和门 -->
+  <rect x="320" y="230" width="40" height="60" fill="#9ABED8"/>
+  <rect x="380" y="230" width="40" height="60" fill="#9ABED8"/>
+  <rect x="440" y="230" width="40" height="60" fill="#9ABED8"/>
+  <rect x="500" y="230" width="40" height="60" fill="#9ABED8"/>
+  <rect x="560" y="230" width="80" height="120" fill="#9ABED8"/>
+  <rect x="660" y="230" width="40" height="60" fill="#9ABED8"/>
+  <rect x="720" y="230" width="40" height="60" fill="#9ABED8"/>
+  <rect x="780" y="230" width="40" height="60" fill="#9ABED8"/>
+  <rect x="840" y="230" width="40" height="60" fill="#9ABED8"/>
+  
+  <!-- 建筑细节 - 柱子 -->
+  <rect x="550" y="200" width="10" height="250" fill="#D5C7A8"/>
+  <rect x="640" y="200" width="10" height="250" fill="#D5C7A8"/>
+  
+  <!-- 建筑顶部 -->
+  <polygon points="250,200 950,200 850,150 350,150" fill="#BEA77F"/>
+  <polygon points="545,150 655,150 615,100 585,100" fill="#A49476"/>
+  
+  <!-- 前景草坪 -->
+  <rect x="0" y="450" width="1200" height="150" fill="#528F65"/>
+  
+  <!-- 人行道 -->
+  <polygon points="550,450 650,450 800,600 400,600" fill="#E2DED5"/>
+  
+  <!-- 路径装饰 - 地毯图案 -->
+  <rect x="550" y="460" width="100" height="20" fill="#8A3324"/>
+  <rect x="545" y="490" width="110" height="20" fill="#8A3324"/>
+  <rect x="540" y="520" width="120" height="20" fill="#8A3324"/>
+  <rect x="535" y="550" width="130" height="20" fill="#8A3324"/>
+  <rect x="530" y="580" width="140" height="20" fill="#8A3324"/>
+  
+  <!-- 地毯装饰图案 -->
+  <path d="M555,470 L555,480 L565,480 L565,470 Z" fill="#D4A017"/>
+  <path d="M580,470 L580,480 L590,480 L590,470 Z" fill="#D4A017"/>
+  <path d="M605,470 L605,480 L615,480 L615,470 Z" fill="#D4A017"/>
+  <path d="M630,470 L630,480 L640,480 L640,470 Z" fill="#D4A017"/>
+  
+  <path d="M550,500 L550,510 L560,510 L560,500 Z" fill="#D4A017"/>
+  <path d="M575,500 L575,510 L585,510 L585,500 Z" fill="#D4A017"/>
+  <path d="M600,500 L600,510 L610,510 L610,500 Z" fill="#D4A017"/>
+  <path d="M625,500 L625,510 L635,510 L635,500 Z" fill="#D4A017"/>
+  <path d="M645,500 L645,510 L655,510 L655,500 Z" fill="#D4A017"/>
+  
+  <!-- 校园树木 -->
+  <circle cx="200" cy="420" r="50" fill="#3A7842"/>
+  <circle cx="1000" cy="420" r="50" fill="#3A7842"/>
+  <circle cx="250" cy="450" r="40" fill="#457E4C"/>
+  <circle cx="950" cy="450" r="40" fill="#457E4C"/>
+</svg> 

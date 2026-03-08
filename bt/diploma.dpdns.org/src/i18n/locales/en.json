@@ -1,0 +1,449 @@
+{
+  "certificatesPage": {
+    "title": "Certificate Wall",
+    "subtitle": "Explore the academic achievements of our global students",
+    "searchPlaceholder": "Search by name, course, or certificate ID",
+    "noResultsTitle": "No certificates found",
+    "noResultsText": "Try different search terms or clear your search to see all certificates.",
+    "download": "Download",
+    "downloading": "Downloading...",
+    "downloadingMessage": "Preparing certificate...",
+    "downloadSuccess": "Download successful!",
+    "downloadError": "Download failed, please try again",
+    "ariaLabel": "View {{name}}'s {{course}} certificate",
+    "verifySection": {
+      "title": "Verify Certificate Authenticity",
+      "description": "Validate the authenticity and legitimacy of certificates by entering the certificate ID.",
+      "action": "Verify Certificate"
+    },
+    "certificateModal": {
+      "studentInfo": "Student Information",
+      "name": "Name",
+      "certificateDetails": "Certificate Details",
+      "course": "Program",
+      "description": "Program Description",
+      "issueDate": "Issue Date",
+      "certificateId": "Certificate ID",
+      "download": "Download Certificate",
+      "verify": "Verify Authenticity",
+      "close": "Close",
+      "verifiedText": "This certificate has been verified using blockchain technology to ensure its authenticity and immutability."
+    },
+    "noCertificates": "No Certificates Available",
+    "noCertificatesMessage": "There are currently no certificates available for display."
+  },
+  "certificateWall": {
+    "title": "Certificate Wall",
+    "subtitle": "Celebrating academic achievements from around the world",
+    "statsTitle": "Certificate Statistics",
+    "totalCertificates": "Total Certificates",
+    "countriesRepresented": "Countries Represented",
+    "averageSatisfaction": "Average Satisfaction",
+    "topProgram": "Top Program",
+    "searchPlaceholder": "Search for certificates...",
+    "allPrograms": "All Programs",
+    "verifyTitle": "Verify a Certificate",
+    "verifyPlaceholder": "Enter certificate number (e.g. GHU-BA-2023-123456)",
+    "verify": "Verify Certificate",
+    "verifying": "Verifying...",
+    "validCertificate": "Certificate Verified Successfully",
+    "notFound": "Certificate not found. Please check the ID and try again.",
+    "recipient": "Recipient",
+    "program": "Program",
+    "issueDate": "Issue Date",
+    "country": "Country",
+    "achievements": "Achievements",
+    "viewCertificate": "View Certificate",
+    "recentCertificates": "Recent Certificates",
+    "noResults": "No certificates found matching your search.",
+    "officialCertificate": "Official Certificate",
+    "certifies": "This is to certify that",
+    "hasCompleted": "has successfully completed",
+    "issuedOn": "Issued on",
+    "presidentSignature": "University President",
+    "deanSignature": "Program Director",
+    "verifyAt": "Verify this certificate at verify.stratford-university.edu",
+    "close": "Close"
+  },
+  "verifyCertificatePage": {
+    "title": "Verify Your Certificate",
+    "subtitle": "Confirm the authenticity and validity of your certificate through our online verification system. Each certificate has a unique identifier and blockchain record.",
+    "form": {
+      "certificateIdLabel": "Certificate ID",
+      "certificateIdPlaceholder": "Enter certificate ID (e.g. CERT-1234)",
+      "verifyButton": "Verify Now",
+      "verifyingButton": "Verifying...",
+      "instructionText": "Enter the certificate ID and click the verify button to see certificate details"
+    },
+    "results": {
+      "valid": "Certificate Verification Successful",
+      "invalid": "Certificate Verification Failed",
+      "certificateDetails": "Certificate Details",
+      "certificateId": "Certificate ID",
+      "name": "Certificate Holder Name",
+      "course": "Course Name",
+      "issueDate": "Issue Date",
+      "expiryDate": "Valid Until",
+      "status": "Status"
+    }
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "subtitle": "Learn about our university, mission, and values",
+    "mission": {
+      "label": "Our Mission",
+      "title": "Transforming Lives Through Quality Education",
+      "description1": "Stratford International University is committed to providing accessible, high-quality education that prepares students for success in a global economy.",
+      "description2": "We strive to create a learning environment that fosters innovation, critical thinking, and practical skills development through cutting-edge curriculum and expert faculty."
+    },
+    "exploreCourses": "Explore Our Courses",
+    "campusImageAlt": "University Campus",
+    "advantages": {
+      "label": "Why Choose Us",
+      "title": "Our Strengths",
+      "subtitle": "What sets Stratford International University apart",
+      "globalRecognition": {
+        "title": "Global Recognition",
+        "description": "Our degrees and certificates are recognized by employers and educational institutions worldwide"
+      },
+      "excellence": {
+        "title": "Academic Excellence",
+        "description": "Rigorous curriculum developed by industry experts focused on practical knowledge and skills"
+      },
+      "network": {
+        "title": "Global Network",
+        "description": "Connect with students, alumni, and professionals from around the world"
+      },
+      "security": {
+        "title": "Blockchain Credentials",
+        "description": "Secure, verifiable digital credentials using advanced blockchain technology"
+      }
+    }
+  },
+  "coursesPage": {
+    "title": "Our Courses",
+    "subtitle": "Explore our wide range of programs designed for career advancement",
+    "filters": {
+      "searchLabel": "Search",
+      "searchPlaceholder": "Search by title or keyword",
+      "categoryLabel": "Category",
+      "allCategories": "All Categories",
+      "levelLabel": "Level",
+      "allLevels": "All Levels"
+    },
+    "highlightsLabel": "Highlights",
+    "viewDetails": "View Details",
+    "monthsUnit": "months",
+    "noCourses": "No courses found",
+    "tryDifferentSearch": "Try different search terms or filters"
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
+    "form": {
+      "title": "Send us a message",
+      "nameLabel": "Your Name",
+      "namePlaceholder": "Enter your name",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "phoneLabel": "Phone Number",
+      "phonePlaceholder": "Enter your phone number (optional)",
+      "subjectLabel": "Subject",
+      "subjectPlaceholder": "What is this regarding?",
+      "messageLabel": "Message",
+      "messagePlaceholder": "How can we help you?",
+      "submitButton": "Send Message",
+      "submittingButton": "Sending...",
+      "successMessage": "Your message has been sent successfully. We'll get back to you soon.",
+      "errorMessage": "There was a problem sending your message. Please try again."
+    },
+    "contactInfo": {
+      "title": "Contact Information",
+      "address": {
+        "title": "Address",
+        "value": "123 University Ave, London, UK EC4R 9HA"
+      },
+      "phone": {
+        "title": "Phone",
+        "value": "+44 20 7123 4567"
+      },
+      "email": {
+        "title": "Email",
+        "value": "info@stratford-university.edu"
+      },
+      "hours": {
+        "title": "Office Hours",
+        "weekdays": "Monday-Friday: 9:00 AM - 6:00 PM",
+        "saturday": "Saturday: 10:00 AM - 2:00 PM",
+        "sunday": "Sunday: Closed"
+      },
+      "social": {
+        "title": "Connect With Us"
+      }
+    },
+    "mapTitle": "Our Location"
+  },
+  "header": {
+    "home": "Home",
+    "courses": "Courses",
+    "certificates": "Certificates",
+    "verifyCertificate": "Verify Certificate",
+    "about": "About Us",
+    "contact": "Contact",
+    "login": "Login",
+    "register": "Register",
+    "dashboard": "Dashboard",
+    "adminPanel": "Admin Panel",
+    "logout": "Logout",
+    "universityChinese": "Stratford International University"
+  },
+  "login": {
+    "title": "Sign In to Your Account",
+    "orRegister": "Don't have an account?",
+    "registerLink": "Sign up",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot your password?",
+    "signIn": "Sign In",
+    "signingIn": "Signing in...",
+    "errors": {
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email",
+      "passwordRequired": "Password is required",
+      "invalidCredentials": "Invalid email or password",
+      "loginFailed": "Login failed, please try again",
+      "serverError": "Server error, please try again later",
+      "serverOffline": "Server connection failed, please check your connection or try again later"
+    }
+  },
+  "register": {
+    "title": "Create New Account",
+    "alreadyHaveAccount": "Already have an account?",
+    "loginLink": "Sign in",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Enter your full name",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "Enter your email",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Create a password",
+    "confirmPasswordLabel": "Confirm Password",
+    "confirmPasswordPlaceholder": "Confirm your password",
+    "agreeTerms": "I agree to the",
+    "termsLink": "Terms of Service and Privacy Policy",
+    "createAccount": "Create Account",
+    "creatingAccount": "Creating...",
+    "success": "Registration successful. Please sign in.",
+    "errors": {
+      "nameRequired": "Name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email",
+      "emailTaken": "This email is already registered",
+      "passwordRequired": "Password is required",
+      "passwordTooShort": "Password must be at least 8 characters",
+      "passwordMismatch": "Passwords don't match",
+      "termsRequired": "You must agree to the terms",
+      "registerFailed": "Registration failed, please try again"
+    }
+  },
+  "language": {
+    "zh": "中文",
+    "en": "English"
+  },
+  "homePage": {
+    "hero": {
+      "title": "Globally Recognized Online Higher Education",
+      "subtitle": "Flexible learning with internationally recognized academic credentials",
+      "explore": "Explore Courses"
+    },
+    "features": {
+      "title": "Our Advantages",
+      "subtitle": "Why Choose Stratford International University",
+      "globalRecognition": {
+        "title": "Global Recognition",
+        "description": "Our degrees are recognized by global businesses and educational institutions"
+      },
+      "flexibleLearning": {
+        "title": "Flexible Learning",
+        "description": "Complete your courses online at your own pace and schedule"
+      },
+      "expertFaculty": {
+        "title": "Expert Faculty",
+        "description": "Learn from industry experts providing practical education"
+      },
+      "careerSupport": {
+        "title": "Career Support",
+        "description": "Comprehensive career guidance and employment services to help you achieve your goals"
+      }
+    },
+    "cta": {
+      "title": "Start Your Learning Journey",
+      "subtitle": "Apply now for our courses and open a new chapter in your career development",
+      "applyNow": "Apply Now",
+      "contactUs": "Contact Us"
+    },
+    "stats": {
+      "graduationRate": "Graduate Employment Rate",
+      "companies": "Partner Companies",
+      "countries": "Countries with Students",
+      "experience": "Years of Education Experience"
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome back, {{user}}!",
+    "overview": "Here's an overview of your certificates and recent activity.",
+    "tabs": {
+      "dashboard": "Dashboard",
+      "generateCertificate": "Generate SIU Certificate",
+      "certificateDetails": "Certificate Details"
+    },
+    "loadingMessage": "Loading your dashboard...",
+    "failedTitle": "Failed to load dashboard",
+    "statistics": {
+      "totalCertificates": "Total Certificates",
+      "pendingApproval": "Pending Approval",
+      "issuedCertificates": "Issued Certificates",
+      "revokedCertificates": "Revoked Certificates"
+    },
+    "actions": {
+      "viewAll": "View all",
+      "viewPending": "View pending",
+      "viewIssued": "View issued",
+      "viewRevoked": "View revoked"
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "requestCertificate": {
+        "title": "Request Certificate",
+        "description": "Apply for a new certificate or qualification.",
+        "action": "Apply Now"
+      },
+      "updateProfile": {
+        "title": "Update Profile",
+        "description": "Update your personal information and security settings.",
+        "action": "View Profile"
+      },
+      "browseCertificates": {
+        "title": "Browse Certificates",
+        "description": "View and manage all your certificates.",
+        "action": "View All"
+      }
+    },
+    "recentCertificates": {
+      "title": "Recent Certificates",
+      "description": "Your most recently requested or updated certificates.",
+      "noCertificates": {
+        "title": "No certificates found",
+        "description": "Get started by requesting your first certificate.",
+        "action": "Request Certificate"
+      }
+    }
+  },
+  "certificates": {
+    "title": "Certificates",
+    "allCertificates": "All Certificates",
+    "unknown": "Unknown Certificate",
+    "unspecifiedCourse": "Unspecified Course",
+    "unspecifiedRecipient": "Unspecified Recipient",
+    "unspecifiedDate": "Unspecified Date",
+    "noAssignedNumber": "No Number Assigned",
+    "notGenerated": "Not Generated Yet",
+    "noIdCannotVerify": "No certificate ID assigned, cannot verify",
+    "viewAndManage": "View and manage all your certificates",
+    "showingStatus": "Showing all your {{status}} certificates",
+    "noCertificatesFound": "No certificates found",
+    "noStatusFound": "No {{status}} certificates found",
+    "loadingCertificates": "Loading certificates...",
+    "loadingCertificate": "Loading certificate details...",
+    "requestNew": "Request New Certificate",
+    "filters": {
+      "all": "All",
+      "pending": "Pending",
+      "issued": "Issued",
+      "revoked": "Revoked"
+    },
+    "status": {
+      "pending": "Pending",
+      "issued": "Issued",
+      "revoked": "Revoked"
+    },
+    "details": {
+      "title": "Certificate Details",
+      "subtitle": "Details and information about your certificate.",
+      "downloadPDF": "Download PDF Certificate",
+      "certificateNumber": "Certificate Number",
+      "course": "Course/Degree",
+      "recipientName": "Recipient Name",
+      "issueDate": "Issue Date",
+      "status": "Status",
+      "blockchainHash": "Blockchain Hash",
+      "verificationLink": "Verification Link",
+      "verify": "Verify this certificate"
+    },
+    "certificateViewer": {
+      "title": "Certificate Viewer",
+      "close": "Close"
+    }
+  },
+  "certificate": {
+    "universityName": "STRATFORD INTERNATIONAL UNIVERSITY",
+    "completionTitle": "CERTIFICATE OF COMPLETION",
+    "certifiesText": "The Stratford International University hereby certifies that",
+    "requirementsText": "has fulfilled the requirements for the degree of",
+    "rightsText": "and is awarded this Certificate of Completion with all rights, privileges, and honors appertaining thereto.",
+    "honors": "Cum Honore",
+    "awardedDate": "Awarded Date",
+    "presidentTitle": "Prof. Dr. Linda Foster\nUniversity President",
+    "directorTitle": "Prof. Dr. James Carpenter\nDirector, MBA Program",
+    "idLabel": "Certificate ID",
+    "generic": "certificate",
+    "pdfError": "Error generating PDF, please try again later"
+  },
+  "unauthorized": {
+    "title": "Access Denied",
+    "message": "You do not have permission to access this page. To gain access, please contact the system administrator or log in with an account that has the appropriate permissions.",
+    "goHome": "Back to Home",
+    "login": "Log in Again"
+  },
+  "admin": {
+    "dashboard": "Admin Dashboard",
+    "certificates": "Certificate Management",
+    "users": "User Management",
+    "settings": "System Settings",
+    "overview": "Overview",
+    "payments": "Payment Management",
+    "stats": {
+      "totalCertificates": "Total Certificates",
+      "totalUsers": "Total Users",
+      "recentCertificates": "Recent Certificates",
+      "revenue": "Revenue",
+      "verificationRate": "Verification Rate"
+    },
+    "certificatesList": {
+      "id": "ID",
+      "name": "Name",
+      "program": "Program",
+      "date": "Date",
+      "status": "Status",
+      "actions": "Actions",
+      "view": "View",
+      "edit": "Edit",
+      "delete": "Delete",
+      "approve": "Approve",
+      "reject": "Reject",
+      "revoke": "Revoke"
+    },
+    "usersList": {
+      "id": "ID",
+      "name": "Name",
+      "email": "Email",
+      "role": "Role",
+      "joined": "Joined Date",
+      "lastLogin": "Last Login",
+      "actions": "Actions",
+      "status": "Status"
+    }
+  }
+}
